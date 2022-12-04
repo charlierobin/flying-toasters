@@ -1,0 +1,1320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		05419FD5A3E04BA58AF6CED1 /* AppImplMacScreenSaver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D623A3A47D14C6FBB5D3F20 /* AppImplMacScreenSaver.mm */; };
+		056DE05B2257455BABCDC356 /* CinderViewMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94BA75AF26244D3CA9AF4988 /* CinderViewMac.mm */; };
+		0F9A7E92C810456B971CFB22 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = DACDA885508E422495712B8B /* thumbnail.png */; };
+		1737F8FC44D44774BC89F66C /* AppScreenSaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7B5D0DF93B446669F2BBF7C /* AppScreenSaver.cpp */; };
+		4197D75EC04E4255BB0AA2FA /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13300E35DF8B4BA8BDBCF821 /* ScreenSaver.framework */; };
+		43C222AFF0BA44DAB45EC3B9 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58114F2CDC2C4B5584047D46 /* thumbnail@2x.png */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BB8258CABF14482C8B954B3E /* UrlImplCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = D3AF3D8CB2AF47F0B802AC7F /* UrlImplCocoa.mm */; };
+		CB40723F293678AD00C2EF10 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB407233293678AD00C2EF10 /* Sprite.cpp */; };
+		CB407240293678AD00C2EF10 /* FlyingToasters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB40723D293678AD00C2EF10 /* FlyingToasters.cpp */; };
+		CB593EA12937B60100B0E4D8 /* smoke_0027.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DDA2937B5FC00B0E4D8 /* smoke_0027.png */; };
+		CB593EA22937B60100B0E4D8 /* toaster_0097.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DDB2937B5FC00B0E4D8 /* toaster_0097.png */; };
+		CB593EA32937B60100B0E4D8 /* toaster_0100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DDC2937B5FC00B0E4D8 /* toaster_0100.png */; };
+		CB593EA42937B60100B0E4D8 /* toast-burnt.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DDD2937B5FC00B0E4D8 /* toast-burnt.png */; };
+		CB593EA52937B60100B0E4D8 /* toaster_0039.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DDE2937B5FC00B0E4D8 /* toaster_0039.png */; };
+		CB593EA62937B60100B0E4D8 /* police_0027.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DDF2937B5FC00B0E4D8 /* police_0027.png */; };
+		CB593EA72937B60100B0E4D8 /* police_0003.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE02937B5FC00B0E4D8 /* police_0003.png */; };
+		CB593EA82937B60100B0E4D8 /* toaster_0011.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE12937B5FC00B0E4D8 /* toaster_0011.png */; };
+		CB593EA92937B60100B0E4D8 /* toaster_0083.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE22937B5FC00B0E4D8 /* toaster_0083.png */; };
+		CB593EAA2937B60100B0E4D8 /* toaster_0101.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE32937B5FC00B0E4D8 /* toaster_0101.png */; };
+		CB593EAB2937B60100B0E4D8 /* toaster_0104.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE42937B5FC00B0E4D8 /* toaster_0104.png */; };
+		CB593EAC2937B60100B0E4D8 /* toaster_0129.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE52937B5FC00B0E4D8 /* toaster_0129.png */; };
+		CB593EAD2937B60100B0E4D8 /* toaster_0118.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE62937B5FC00B0E4D8 /* toaster_0118.png */; };
+		CB593EAE2937B60100B0E4D8 /* toaster_0123.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE72937B5FC00B0E4D8 /* toaster_0123.png */; };
+		CB593EAF2937B60100B0E4D8 /* toaster_0044.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE82937B5FC00B0E4D8 /* toaster_0044.png */; };
+		CB593EB02937B60100B0E4D8 /* toaster_0051.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DE92937B5FC00B0E4D8 /* toaster_0051.png */; };
+		CB593EB12937B60100B0E4D8 /* laser-bolt.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DEA2937B5FC00B0E4D8 /* laser-bolt.png */; };
+		CB593EB22937B60100B0E4D8 /* toaster_0018.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DEB2937B5FC00B0E4D8 /* toaster_0018.png */; };
+		CB593EB32937B60100B0E4D8 /* toaster_0094.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DEC2937B5FD00B0E4D8 /* toaster_0094.png */; };
+		CB593EB42937B60100B0E4D8 /* toaster_0073.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DED2937B5FD00B0E4D8 /* toaster_0073.png */; };
+		CB593EB52937B60100B0E4D8 /* toaster_0064.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DEE2937B5FD00B0E4D8 /* toaster_0064.png */; };
+		CB593EB62937B60100B0E4D8 /* toaster_0059.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DEF2937B5FD00B0E4D8 /* toaster_0059.png */; };
+		CB593EB72937B60100B0E4D8 /* smoke_0003.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF02937B5FD00B0E4D8 /* smoke_0003.png */; };
+		CB593EB82937B60100B0E4D8 /* toaster_0084.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF12937B5FD00B0E4D8 /* toaster_0084.png */; };
+		CB593EB92937B60100B0E4D8 /* toaster_0020.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF22937B5FD00B0E4D8 /* toaster_0020.png */; };
+		CB593EBA2937B60100B0E4D8 /* smoke_0012.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF32937B5FD00B0E4D8 /* smoke_0012.png */; };
+		CB593EBB2937B60100B0E4D8 /* TIE-fighter.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF42937B5FD00B0E4D8 /* TIE-fighter.png */; };
+		CB593EBC2937B60100B0E4D8 /* toaster_0128.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF52937B5FD00B0E4D8 /* toaster_0128.png */; };
+		CB593EBD2937B60100B0E4D8 /* toaster_0117.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF62937B5FD00B0E4D8 /* toaster_0117.png */; };
+		CB593EBE2937B60100B0E4D8 /* toaster_0119.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF72937B5FD00B0E4D8 /* toaster_0119.png */; };
+		CB593EBF2937B60100B0E4D8 /* toaster_0060.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF82937B5FD00B0E4D8 /* toaster_0060.png */; };
+		CB593EC02937B60100B0E4D8 /* smoke_0015.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DF92937B5FD00B0E4D8 /* smoke_0015.png */; };
+		CB593EC12937B60100B0E4D8 /* toaster_0032.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DFA2937B5FD00B0E4D8 /* toaster_0032.png */; };
+		CB593EC22937B60100B0E4D8 /* police_0029.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DFB2937B5FD00B0E4D8 /* police_0029.png */; };
+		CB593EC32937B60100B0E4D8 /* toaster_0079.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DFC2937B5FD00B0E4D8 /* toaster_0079.png */; };
+		CB593EC42937B60100B0E4D8 /* smoke_0025.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DFD2937B5FD00B0E4D8 /* smoke_0025.png */; };
+		CB593EC52937B60100B0E4D8 /* police_0015.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DFE2937B5FD00B0E4D8 /* police_0015.png */; };
+		CB593EC62937B60100B0E4D8 /* toaster_0087.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593DFF2937B5FD00B0E4D8 /* toaster_0087.png */; };
+		CB593EC72937B60100B0E4D8 /* toaster_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E002937B5FD00B0E4D8 /* toaster_0001.png */; };
+		CB593EC82937B60100B0E4D8 /* toaster_0115.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E012937B5FD00B0E4D8 /* toaster_0115.png */; };
+		CB593EC92937B60100B0E4D8 /* toaster_0071.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E022937B5FD00B0E4D8 /* toaster_0071.png */; };
+		CB593ECA2937B60100B0E4D8 /* toaster_0004.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E032937B5FD00B0E4D8 /* toaster_0004.png */; };
+		CB593ECB2937B60100B0E4D8 /* toaster_0023.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E042937B5FD00B0E4D8 /* toaster_0023.png */; };
+		CB593ECC2937B60100B0E4D8 /* police_0023.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E052937B5FD00B0E4D8 /* police_0023.png */; };
+		CB593ECD2937B60100B0E4D8 /* smoke_0023.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E062937B5FD00B0E4D8 /* smoke_0023.png */; };
+		CB593ECE2937B60100B0E4D8 /* toaster_0057.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E072937B5FD00B0E4D8 /* toaster_0057.png */; };
+		CB593ECF2937B60100B0E4D8 /* smoke_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E082937B5FD00B0E4D8 /* smoke_0001.png */; };
+		CB593ED02937B60100B0E4D8 /* police_0012.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E092937B5FD00B0E4D8 /* police_0012.png */; };
+		CB593ED12937B60100B0E4D8 /* toaster_0120.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E0A2937B5FD00B0E4D8 /* toaster_0120.png */; };
+		CB593ED22937B60100B0E4D8 /* smoke_0031.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E0B2937B5FD00B0E4D8 /* smoke_0031.png */; };
+		CB593ED32937B60100B0E4D8 /* toaster_0112.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E0C2937B5FD00B0E4D8 /* toaster_0112.png */; };
+		CB593ED42937B60100B0E4D8 /* toaster_0038.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E0D2937B5FD00B0E4D8 /* toaster_0038.png */; };
+		CB593ED52937B60100B0E4D8 /* toaster_0072.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E0E2937B5FD00B0E4D8 /* toaster_0072.png */; };
+		CB593ED62937B60100B0E4D8 /* toaster_0030.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E0F2937B5FD00B0E4D8 /* toaster_0030.png */; };
+		CB593ED72937B60100B0E4D8 /* toaster_0062.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E102937B5FD00B0E4D8 /* toaster_0062.png */; };
+		CB593ED82937B60100B0E4D8 /* police_0020.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E112937B5FD00B0E4D8 /* police_0020.png */; };
+		CB593ED92937B60100B0E4D8 /* spot.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E122937B5FE00B0E4D8 /* spot.png */; };
+		CB593EDA2937B60100B0E4D8 /* toaster_0088.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E132937B5FE00B0E4D8 /* toaster_0088.png */; };
+		CB593EDB2937B60100B0E4D8 /* toaster_0047.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E142937B5FE00B0E4D8 /* toaster_0047.png */; };
+		CB593EDC2937B60100B0E4D8 /* toaster_0074.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E152937B5FE00B0E4D8 /* toaster_0074.png */; };
+		CB593EDD2937B60100B0E4D8 /* toaster_0035.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E162937B5FE00B0E4D8 /* toaster_0035.png */; };
+		CB593EDE2937B60100B0E4D8 /* police_0026.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E172937B5FE00B0E4D8 /* police_0026.png */; };
+		CB593EDF2937B60100B0E4D8 /* toaster_0109.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E182937B5FE00B0E4D8 /* toaster_0109.png */; };
+		CB593EE02937B60100B0E4D8 /* toaster_0026.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E192937B5FE00B0E4D8 /* toaster_0026.png */; };
+		CB593EE12937B60100B0E4D8 /* toaster_0080.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E1A2937B5FE00B0E4D8 /* toaster_0080.png */; };
+		CB593EE22937B60100B0E4D8 /* toaster_0040.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E1B2937B5FE00B0E4D8 /* toaster_0040.png */; };
+		CB593EE32937B60100B0E4D8 /* toaster_0022.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E1C2937B5FE00B0E4D8 /* toaster_0022.png */; };
+		CB593EE42937B60100B0E4D8 /* toaster_0013.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E1D2937B5FE00B0E4D8 /* toaster_0013.png */; };
+		CB593EE52937B60100B0E4D8 /* police_0007.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E1E2937B5FE00B0E4D8 /* police_0007.png */; };
+		CB593EE62937B60100B0E4D8 /* toaster_0091.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E1F2937B5FE00B0E4D8 /* toaster_0091.png */; };
+		CB593EE72937B60100B0E4D8 /* police_0019.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E202937B5FE00B0E4D8 /* police_0019.png */; };
+		CB593EE82937B60100B0E4D8 /* toaster_0016.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E212937B5FE00B0E4D8 /* toaster_0016.png */; };
+		CB593EE92937B60100B0E4D8 /* toaster_0082.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E222937B5FE00B0E4D8 /* toaster_0082.png */; };
+		CB593EEA2937B60100B0E4D8 /* toaster_0090.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E232937B5FE00B0E4D8 /* toaster_0090.png */; };
+		CB593EEB2937B60100B0E4D8 /* toaster_0069.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E242937B5FE00B0E4D8 /* toaster_0069.png */; };
+		CB593EEC2937B60100B0E4D8 /* toaster_0012.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E252937B5FE00B0E4D8 /* toaster_0012.png */; };
+		CB593EED2937B60100B0E4D8 /* toaster_0077.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E262937B5FE00B0E4D8 /* toaster_0077.png */; };
+		CB593EEE2937B60100B0E4D8 /* police_0005.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E272937B5FE00B0E4D8 /* police_0005.png */; };
+		CB593EEF2937B60100B0E4D8 /* toaster_0070.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E282937B5FE00B0E4D8 /* toaster_0070.png */; };
+		CB593EF02937B60100B0E4D8 /* toaster_0050.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E292937B5FE00B0E4D8 /* toaster_0050.png */; };
+		CB593EF12937B60100B0E4D8 /* smoke_0007.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E2A2937B5FE00B0E4D8 /* smoke_0007.png */; };
+		CB593EF22937B60100B0E4D8 /* smoke_0020.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E2B2937B5FE00B0E4D8 /* smoke_0020.png */; };
+		CB593EF32937B60100B0E4D8 /* toaster_0054.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E2C2937B5FE00B0E4D8 /* toaster_0054.png */; };
+		CB593EF42937B60100B0E4D8 /* toaster_0093.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E2D2937B5FE00B0E4D8 /* toaster_0093.png */; };
+		CB593EF52937B60100B0E4D8 /* smoke_0011.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E2E2937B5FE00B0E4D8 /* smoke_0011.png */; };
+		CB593EF62937B60100B0E4D8 /* police_0002.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E2F2937B5FE00B0E4D8 /* police_0002.png */; };
+		CB593EF72937B60100B0E4D8 /* toaster_0063.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E302937B5FE00B0E4D8 /* toaster_0063.png */; };
+		CB593EF82937B60100B0E4D8 /* toaster_0107.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E312937B5FE00B0E4D8 /* toaster_0107.png */; };
+		CB593EF92937B60100B0E4D8 /* toaster_0005.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E322937B5FE00B0E4D8 /* toaster_0005.png */; };
+		CB593EFA2937B60100B0E4D8 /* smoke_0014.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E332937B5FE00B0E4D8 /* smoke_0014.png */; };
+		CB593EFB2937B60100B0E4D8 /* toaster_0029.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E342937B5FE00B0E4D8 /* toaster_0029.png */; };
+		CB593EFC2937B60100B0E4D8 /* toaster_0075.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E352937B5FE00B0E4D8 /* toaster_0075.png */; };
+		CB593EFD2937B60100B0E4D8 /* police_0018.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E362937B5FE00B0E4D8 /* police_0018.png */; };
+		CB593EFE2937B60100B0E4D8 /* toaster_0034.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E372937B5FE00B0E4D8 /* toaster_0034.png */; };
+		CB593EFF2937B60100B0E4D8 /* toaster_0126.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E382937B5FE00B0E4D8 /* toaster_0126.png */; };
+		CB593F002937B60100B0E4D8 /* toaster_0089.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E392937B5FF00B0E4D8 /* toaster_0089.png */; };
+		CB593F012937B60100B0E4D8 /* toaster_0045.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E3A2937B5FF00B0E4D8 /* toaster_0045.png */; };
+		CB593F022937B60100B0E4D8 /* toaster_0065.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E3B2937B5FF00B0E4D8 /* toaster_0065.png */; };
+		CB593F032937B60100B0E4D8 /* toaster_0068.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E3C2937B5FF00B0E4D8 /* toaster_0068.png */; };
+		CB593F042937B60100B0E4D8 /* police_0014.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E3D2937B5FF00B0E4D8 /* police_0014.png */; };
+		CB593F052937B60100B0E4D8 /* toaster_0061.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E3E2937B5FF00B0E4D8 /* toaster_0061.png */; };
+		CB593F062937B60100B0E4D8 /* toaster_0092.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E3F2937B5FF00B0E4D8 /* toaster_0092.png */; };
+		CB593F072937B60100B0E4D8 /* toaster_0095.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E402937B5FF00B0E4D8 /* toaster_0095.png */; };
+		CB593F082937B60100B0E4D8 /* X-wing.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E412937B5FF00B0E4D8 /* X-wing.png */; };
+		CB593F092937B60100B0E4D8 /* smoke_0004.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E422937B5FF00B0E4D8 /* smoke_0004.png */; };
+		CB593F0A2937B60100B0E4D8 /* toaster_0121.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E432937B5FF00B0E4D8 /* toaster_0121.png */; };
+		CB593F0B2937B60100B0E4D8 /* toaster_0006.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E442937B5FF00B0E4D8 /* toaster_0006.png */; };
+		CB593F0C2937B60100B0E4D8 /* toaster_0108.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E452937B5FF00B0E4D8 /* toaster_0108.png */; };
+		CB593F0D2937B60100B0E4D8 /* smoke_0029.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E462937B5FF00B0E4D8 /* smoke_0029.png */; };
+		CB593F0E2937B60100B0E4D8 /* smoke_0016.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E472937B5FF00B0E4D8 /* smoke_0016.png */; };
+		CB593F0F2937B60100B0E4D8 /* toaster_0028.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E482937B5FF00B0E4D8 /* toaster_0028.png */; };
+		CB593F102937B60100B0E4D8 /* toaster_0046.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E492937B5FF00B0E4D8 /* toaster_0046.png */; };
+		CB593F112937B60100B0E4D8 /* toaster_0106.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E4A2937B5FF00B0E4D8 /* toaster_0106.png */; };
+		CB593F122937B60100B0E4D8 /* toaster_0125.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E4B2937B5FF00B0E4D8 /* toaster_0125.png */; };
+		CB593F132937B60100B0E4D8 /* smoke_0021.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E4C2937B5FF00B0E4D8 /* smoke_0021.png */; };
+		CB593F142937B60100B0E4D8 /* police_0025.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E4D2937B5FF00B0E4D8 /* police_0025.png */; };
+		CB593F152937B60100B0E4D8 /* toaster_0122.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E4E2937B5FF00B0E4D8 /* toaster_0122.png */; };
+		CB593F162937B60100B0E4D8 /* toaster_0085.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E4F2937B5FF00B0E4D8 /* toaster_0085.png */; };
+		CB593F172937B60100B0E4D8 /* toaster_0067.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E502937B5FF00B0E4D8 /* toaster_0067.png */; };
+		CB593F182937B60100B0E4D8 /* toaster_0105.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E512937B5FF00B0E4D8 /* toaster_0105.png */; };
+		CB593F192937B60100B0E4D8 /* smoke_0022.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E522937B5FF00B0E4D8 /* smoke_0022.png */; };
+		CB593F1A2937B60100B0E4D8 /* toaster_0078.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E532937B5FF00B0E4D8 /* toaster_0078.png */; };
+		CB593F1B2937B60100B0E4D8 /* smoke_0006.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E542937B5FF00B0E4D8 /* smoke_0006.png */; };
+		CB593F1C2937B60100B0E4D8 /* police_0010.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E552937B5FF00B0E4D8 /* police_0010.png */; };
+		CB593F1D2937B60100B0E4D8 /* smoke_0009.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E562937B5FF00B0E4D8 /* smoke_0009.png */; };
+		CB593F1E2937B60100B0E4D8 /* police_0016.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E572937B5FF00B0E4D8 /* police_0016.png */; };
+		CB593F1F2937B60100B0E4D8 /* toaster_0031.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E582937B5FF00B0E4D8 /* toaster_0031.png */; };
+		CB593F202937B60100B0E4D8 /* toaster_0043.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E592937B5FF00B0E4D8 /* toaster_0043.png */; };
+		CB593F212937B60100B0E4D8 /* police_0017.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E5A2937B5FF00B0E4D8 /* police_0017.png */; };
+		CB593F222937B60100B0E4D8 /* police_0024.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E5B2937B5FF00B0E4D8 /* police_0024.png */; };
+		CB593F232937B60100B0E4D8 /* toaster_0042.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E5C2937B5FF00B0E4D8 /* toaster_0042.png */; };
+		CB593F242937B60100B0E4D8 /* toaster_0036.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E5D2937B5FF00B0E4D8 /* toaster_0036.png */; };
+		CB593F252937B60100B0E4D8 /* toaster_0076.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E5E2937B5FF00B0E4D8 /* toaster_0076.png */; };
+		CB593F262937B60100B0E4D8 /* toaster_0010.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E5F2937B60000B0E4D8 /* toaster_0010.png */; };
+		CB593F272937B60100B0E4D8 /* toaster_0056.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E602937B60000B0E4D8 /* toaster_0056.png */; };
+		CB593F282937B60100B0E4D8 /* toaster_0017.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E612937B60000B0E4D8 /* toaster_0017.png */; };
+		CB593F292937B60100B0E4D8 /* toaster_0014.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E622937B60000B0E4D8 /* toaster_0014.png */; };
+		CB593F2A2937B60100B0E4D8 /* toaster_0098.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E632937B60000B0E4D8 /* toaster_0098.png */; };
+		CB593F2B2937B60100B0E4D8 /* toaster_0052.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E642937B60000B0E4D8 /* toaster_0052.png */; };
+		CB593F2C2937B60100B0E4D8 /* police_0008.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E652937B60000B0E4D8 /* police_0008.png */; };
+		CB593F2D2937B60100B0E4D8 /* toaster_0116.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E662937B60000B0E4D8 /* toaster_0116.png */; };
+		CB593F2E2937B60100B0E4D8 /* toaster_0024.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E672937B60000B0E4D8 /* toaster_0024.png */; };
+		CB593F2F2937B60200B0E4D8 /* smoke_0005.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E682937B60000B0E4D8 /* smoke_0005.png */; };
+		CB593F302937B60200B0E4D8 /* toast.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E692937B60000B0E4D8 /* toast.png */; };
+		CB593F312937B60200B0E4D8 /* smoke_0002.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E6A2937B60000B0E4D8 /* smoke_0002.png */; };
+		CB593F322937B60200B0E4D8 /* police_0011.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E6B2937B60000B0E4D8 /* police_0011.png */; };
+		CB593F332937B60200B0E4D8 /* toaster_0002.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E6C2937B60000B0E4D8 /* toaster_0002.png */; };
+		CB593F342937B60200B0E4D8 /* toaster_0113.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E6D2937B60000B0E4D8 /* toaster_0113.png */; };
+		CB593F352937B60200B0E4D8 /* smoke_0024.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E6E2937B60000B0E4D8 /* smoke_0024.png */; };
+		CB593F362937B60200B0E4D8 /* toaster_0081.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E6F2937B60000B0E4D8 /* toaster_0081.png */; };
+		CB593F372937B60200B0E4D8 /* toaster_0033.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E702937B60000B0E4D8 /* toaster_0033.png */; };
+		CB593F382937B60200B0E4D8 /* toaster_0037.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E712937B60000B0E4D8 /* toaster_0037.png */; };
+		CB593F392937B60200B0E4D8 /* smoke_0026.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E722937B60000B0E4D8 /* smoke_0026.png */; };
+		CB593F3A2937B60200B0E4D8 /* toaster_0130.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E732937B60000B0E4D8 /* toaster_0130.png */; };
+		CB593F3B2937B60200B0E4D8 /* toaster_0027.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E742937B60000B0E4D8 /* toaster_0027.png */; };
+		CB593F3C2937B60200B0E4D8 /* police_0006.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E752937B60000B0E4D8 /* police_0006.png */; };
+		CB593F3D2937B60200B0E4D8 /* smoke_0008.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E762937B60000B0E4D8 /* smoke_0008.png */; };
+		CB593F3E2937B60200B0E4D8 /* smoke_0010.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E772937B60000B0E4D8 /* smoke_0010.png */; };
+		CB593F3F2937B60200B0E4D8 /* toaster_0055.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E782937B60000B0E4D8 /* toaster_0055.png */; };
+		CB593F402937B60200B0E4D8 /* toaster_0021.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E792937B60000B0E4D8 /* toaster_0021.png */; };
+		CB593F412937B60200B0E4D8 /* toaster_0019.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E7A2937B60000B0E4D8 /* toaster_0019.png */; };
+		CB593F422937B60200B0E4D8 /* toaster_0015.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E7B2937B60000B0E4D8 /* toaster_0015.png */; };
+		CB593F432937B60200B0E4D8 /* smoke_0030.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E7C2937B60000B0E4D8 /* smoke_0030.png */; };
+		CB593F442937B60200B0E4D8 /* toaster_0110.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E7D2937B60000B0E4D8 /* toaster_0110.png */; };
+		CB593F452937B60200B0E4D8 /* toaster_0058.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E7E2937B60000B0E4D8 /* toaster_0058.png */; };
+		CB593F462937B60200B0E4D8 /* toaster_0053.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E7F2937B60000B0E4D8 /* toaster_0053.png */; };
+		CB593F472937B60200B0E4D8 /* smoke_0028.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E802937B60000B0E4D8 /* smoke_0028.png */; };
+		CB593F482937B60200B0E4D8 /* toaster_0009.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E812937B60000B0E4D8 /* toaster_0009.png */; };
+		CB593F492937B60200B0E4D8 /* toaster_0000.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E822937B60000B0E4D8 /* toaster_0000.png */; };
+		CB593F4A2937B60200B0E4D8 /* toaster_0008.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E832937B60000B0E4D8 /* toaster_0008.png */; };
+		CB593F4B2937B60200B0E4D8 /* toaster_0114.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E842937B60000B0E4D8 /* toaster_0114.png */; };
+		CB593F4C2937B60200B0E4D8 /* smoke_0018.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E852937B60000B0E4D8 /* smoke_0018.png */; };
+		CB593F4D2937B60200B0E4D8 /* toaster_0066.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E862937B60000B0E4D8 /* toaster_0066.png */; };
+		CB593F4E2937B60200B0E4D8 /* police_0004.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E872937B60100B0E4D8 /* police_0004.png */; };
+		CB593F4F2937B60200B0E4D8 /* toaster_0025.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E882937B60100B0E4D8 /* toaster_0025.png */; };
+		CB593F502937B60200B0E4D8 /* toaster_0041.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E892937B60100B0E4D8 /* toaster_0041.png */; };
+		CB593F512937B60200B0E4D8 /* smoke_0000.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E8A2937B60100B0E4D8 /* smoke_0000.png */; };
+		CB593F522937B60200B0E4D8 /* toaster_0127.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E8B2937B60100B0E4D8 /* toaster_0127.png */; };
+		CB593F532937B60200B0E4D8 /* police_0013.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E8C2937B60100B0E4D8 /* police_0013.png */; };
+		CB593F542937B60200B0E4D8 /* toaster_0124.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E8D2937B60100B0E4D8 /* toaster_0124.png */; };
+		CB593F552937B60200B0E4D8 /* toaster_0103.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E8E2937B60100B0E4D8 /* toaster_0103.png */; };
+		CB593F562937B60200B0E4D8 /* toaster_0099.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E8F2937B60100B0E4D8 /* toaster_0099.png */; };
+		CB593F572937B60200B0E4D8 /* police_0028.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E902937B60100B0E4D8 /* police_0028.png */; };
+		CB593F582937B60200B0E4D8 /* toaster_0048.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E912937B60100B0E4D8 /* toaster_0048.png */; };
+		CB593F592937B60200B0E4D8 /* toaster_0007.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E922937B60100B0E4D8 /* toaster_0007.png */; };
+		CB593F5A2937B60200B0E4D8 /* smoke_0019.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E932937B60100B0E4D8 /* smoke_0019.png */; };
+		CB593F5B2937B60200B0E4D8 /* police_0022.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E942937B60100B0E4D8 /* police_0022.png */; };
+		CB593F5C2937B60200B0E4D8 /* smoke_0017.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E952937B60100B0E4D8 /* smoke_0017.png */; };
+		CB593F5D2937B60200B0E4D8 /* toaster_0086.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E962937B60100B0E4D8 /* toaster_0086.png */; };
+		CB593F5E2937B60200B0E4D8 /* toaster_0049.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E972937B60100B0E4D8 /* toaster_0049.png */; };
+		CB593F5F2937B60200B0E4D8 /* police_0009.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E982937B60100B0E4D8 /* police_0009.png */; };
+		CB593F602937B60200B0E4D8 /* smoke_0013.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E992937B60100B0E4D8 /* smoke_0013.png */; };
+		CB593F612937B60200B0E4D8 /* toaster_0096.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E9A2937B60100B0E4D8 /* toaster_0096.png */; };
+		CB593F622937B60200B0E4D8 /* toaster_0102.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E9B2937B60100B0E4D8 /* toaster_0102.png */; };
+		CB593F632937B60200B0E4D8 /* police_0021.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E9C2937B60100B0E4D8 /* police_0021.png */; };
+		CB593F642937B60200B0E4D8 /* police_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E9D2937B60100B0E4D8 /* police_0001.png */; };
+		CB593F652937B60200B0E4D8 /* toaster_0003.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E9E2937B60100B0E4D8 /* toaster_0003.png */; };
+		CB593F662937B60200B0E4D8 /* police_0000.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593E9F2937B60100B0E4D8 /* police_0000.png */; };
+		CB593F672937B60200B0E4D8 /* toaster_0111.png in Resources */ = {isa = PBXBuildFile; fileRef = CB593EA02937B60100B0E4D8 /* toaster_0111.png */; };
+		CBEEC09C293CA19E00285E4F /* thumbnail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEEC09B293CA19E00285E4F /* thumbnail@3x.png */; };
+		D3B59A11B2CD41F09E790649 /* FlyingToastersScreensaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A59B17F0D64D77B566E0E6 /* FlyingToastersScreensaver.cpp */; };
+		DBF51FD60DAA41BFA01D51B0 /* RendererImplGlMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = AF24855AEC794AD695D5C5E0 /* RendererImplGlMac.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0037365B033C43499FF2E4E6 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13300E35DF8B4BA8BDBCF821 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		20A59B17F0D64D77B566E0E6 /* FlyingToastersScreensaver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FlyingToastersScreensaver.cpp; path = ../src/FlyingToastersScreensaver.cpp; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		58114F2CDC2C4B5584047D46 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = "thumbnail@2x.png"; path = "../resources/thumbnail@2x.png"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* FlyingToastersScreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingToastersScreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D623A3A47D14C6FBB5D3F20 /* AppImplMacScreenSaver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppImplMacScreenSaver.mm; path = ../../../../../../../cinder_0.9.2_mac/src/cinder/app/cocoa/AppImplMacScreenSaver.mm; sourceTree = "<group>"; };
+		94BA75AF26244D3CA9AF4988 /* CinderViewMac.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = CinderViewMac.mm; path = ../../../../../../../cinder_0.9.2_mac/src/cinder/app/cocoa/CinderViewMac.mm; sourceTree = "<group>"; };
+		9AFB01572F17412A961E5ABF /* FlyingToastersScreensaver_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = FlyingToastersScreensaver_Prefix.pch; sourceTree = "<group>"; };
+		AF24855AEC794AD695D5C5E0 /* RendererImplGlMac.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = RendererImplGlMac.mm; path = ../../../../../../../cinder_0.9.2_mac/src/cinder/app/cocoa/RendererImplGlMac.mm; sourceTree = "<group>"; };
+		CB407232293678AD00C2EF10 /* Sprites.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sprites.hpp; sourceTree = "<group>"; };
+		CB407233293678AD00C2EF10 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		CB407234293678AD00C2EF10 /* Sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sprite.hpp; sourceTree = "<group>"; };
+		CB407235293678AD00C2EF10 /* FlyingToasters.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FlyingToasters.hpp; sourceTree = "<group>"; };
+		CB407236293678AD00C2EF10 /* TIEToast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TIEToast.hpp; sourceTree = "<group>"; };
+		CB407237293678AD00C2EF10 /* XWingToast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = XWingToast.hpp; sourceTree = "<group>"; };
+		CB407238293678AD00C2EF10 /* ToastBurnt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ToastBurnt.hpp; sourceTree = "<group>"; };
+		CB407239293678AD00C2EF10 /* Smoke.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Smoke.hpp; sourceTree = "<group>"; };
+		CB40723A293678AD00C2EF10 /* Toast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Toast.hpp; sourceTree = "<group>"; };
+		CB40723B293678AD00C2EF10 /* LaserBolt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LaserBolt.hpp; sourceTree = "<group>"; };
+		CB40723C293678AD00C2EF10 /* PoliceToaster.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PoliceToaster.hpp; sourceTree = "<group>"; };
+		CB40723D293678AD00C2EF10 /* FlyingToasters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlyingToasters.cpp; sourceTree = "<group>"; };
+		CB40723E293678AD00C2EF10 /* Toaster.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Toaster.hpp; sourceTree = "<group>"; };
+		CB593DDA2937B5FC00B0E4D8 /* smoke_0027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0027.png; path = ../../frames/smoke_0027.png; sourceTree = "<group>"; };
+		CB593DDB2937B5FC00B0E4D8 /* toaster_0097.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0097.png; path = ../../frames/toaster_0097.png; sourceTree = "<group>"; };
+		CB593DDC2937B5FC00B0E4D8 /* toaster_0100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0100.png; path = ../../frames/toaster_0100.png; sourceTree = "<group>"; };
+		CB593DDD2937B5FC00B0E4D8 /* toast-burnt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toast-burnt.png"; path = "../../frames/toast-burnt.png"; sourceTree = "<group>"; };
+		CB593DDE2937B5FC00B0E4D8 /* toaster_0039.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0039.png; path = ../../frames/toaster_0039.png; sourceTree = "<group>"; };
+		CB593DDF2937B5FC00B0E4D8 /* police_0027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0027.png; path = ../../frames/police_0027.png; sourceTree = "<group>"; };
+		CB593DE02937B5FC00B0E4D8 /* police_0003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0003.png; path = ../../frames/police_0003.png; sourceTree = "<group>"; };
+		CB593DE12937B5FC00B0E4D8 /* toaster_0011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0011.png; path = ../../frames/toaster_0011.png; sourceTree = "<group>"; };
+		CB593DE22937B5FC00B0E4D8 /* toaster_0083.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0083.png; path = ../../frames/toaster_0083.png; sourceTree = "<group>"; };
+		CB593DE32937B5FC00B0E4D8 /* toaster_0101.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0101.png; path = ../../frames/toaster_0101.png; sourceTree = "<group>"; };
+		CB593DE42937B5FC00B0E4D8 /* toaster_0104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0104.png; path = ../../frames/toaster_0104.png; sourceTree = "<group>"; };
+		CB593DE52937B5FC00B0E4D8 /* toaster_0129.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0129.png; path = ../../frames/toaster_0129.png; sourceTree = "<group>"; };
+		CB593DE62937B5FC00B0E4D8 /* toaster_0118.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0118.png; path = ../../frames/toaster_0118.png; sourceTree = "<group>"; };
+		CB593DE72937B5FC00B0E4D8 /* toaster_0123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0123.png; path = ../../frames/toaster_0123.png; sourceTree = "<group>"; };
+		CB593DE82937B5FC00B0E4D8 /* toaster_0044.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0044.png; path = ../../frames/toaster_0044.png; sourceTree = "<group>"; };
+		CB593DE92937B5FC00B0E4D8 /* toaster_0051.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0051.png; path = ../../frames/toaster_0051.png; sourceTree = "<group>"; };
+		CB593DEA2937B5FC00B0E4D8 /* laser-bolt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "laser-bolt.png"; path = "../../frames/laser-bolt.png"; sourceTree = "<group>"; };
+		CB593DEB2937B5FC00B0E4D8 /* toaster_0018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0018.png; path = ../../frames/toaster_0018.png; sourceTree = "<group>"; };
+		CB593DEC2937B5FD00B0E4D8 /* toaster_0094.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0094.png; path = ../../frames/toaster_0094.png; sourceTree = "<group>"; };
+		CB593DED2937B5FD00B0E4D8 /* toaster_0073.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0073.png; path = ../../frames/toaster_0073.png; sourceTree = "<group>"; };
+		CB593DEE2937B5FD00B0E4D8 /* toaster_0064.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0064.png; path = ../../frames/toaster_0064.png; sourceTree = "<group>"; };
+		CB593DEF2937B5FD00B0E4D8 /* toaster_0059.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0059.png; path = ../../frames/toaster_0059.png; sourceTree = "<group>"; };
+		CB593DF02937B5FD00B0E4D8 /* smoke_0003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0003.png; path = ../../frames/smoke_0003.png; sourceTree = "<group>"; };
+		CB593DF12937B5FD00B0E4D8 /* toaster_0084.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0084.png; path = ../../frames/toaster_0084.png; sourceTree = "<group>"; };
+		CB593DF22937B5FD00B0E4D8 /* toaster_0020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0020.png; path = ../../frames/toaster_0020.png; sourceTree = "<group>"; };
+		CB593DF32937B5FD00B0E4D8 /* smoke_0012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0012.png; path = ../../frames/smoke_0012.png; sourceTree = "<group>"; };
+		CB593DF42937B5FD00B0E4D8 /* TIE-fighter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TIE-fighter.png"; path = "../../frames/TIE-fighter.png"; sourceTree = "<group>"; };
+		CB593DF52937B5FD00B0E4D8 /* toaster_0128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0128.png; path = ../../frames/toaster_0128.png; sourceTree = "<group>"; };
+		CB593DF62937B5FD00B0E4D8 /* toaster_0117.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0117.png; path = ../../frames/toaster_0117.png; sourceTree = "<group>"; };
+		CB593DF72937B5FD00B0E4D8 /* toaster_0119.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0119.png; path = ../../frames/toaster_0119.png; sourceTree = "<group>"; };
+		CB593DF82937B5FD00B0E4D8 /* toaster_0060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0060.png; path = ../../frames/toaster_0060.png; sourceTree = "<group>"; };
+		CB593DF92937B5FD00B0E4D8 /* smoke_0015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0015.png; path = ../../frames/smoke_0015.png; sourceTree = "<group>"; };
+		CB593DFA2937B5FD00B0E4D8 /* toaster_0032.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0032.png; path = ../../frames/toaster_0032.png; sourceTree = "<group>"; };
+		CB593DFB2937B5FD00B0E4D8 /* police_0029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0029.png; path = ../../frames/police_0029.png; sourceTree = "<group>"; };
+		CB593DFC2937B5FD00B0E4D8 /* toaster_0079.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0079.png; path = ../../frames/toaster_0079.png; sourceTree = "<group>"; };
+		CB593DFD2937B5FD00B0E4D8 /* smoke_0025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0025.png; path = ../../frames/smoke_0025.png; sourceTree = "<group>"; };
+		CB593DFE2937B5FD00B0E4D8 /* police_0015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0015.png; path = ../../frames/police_0015.png; sourceTree = "<group>"; };
+		CB593DFF2937B5FD00B0E4D8 /* toaster_0087.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0087.png; path = ../../frames/toaster_0087.png; sourceTree = "<group>"; };
+		CB593E002937B5FD00B0E4D8 /* toaster_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0001.png; path = ../../frames/toaster_0001.png; sourceTree = "<group>"; };
+		CB593E012937B5FD00B0E4D8 /* toaster_0115.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0115.png; path = ../../frames/toaster_0115.png; sourceTree = "<group>"; };
+		CB593E022937B5FD00B0E4D8 /* toaster_0071.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0071.png; path = ../../frames/toaster_0071.png; sourceTree = "<group>"; };
+		CB593E032937B5FD00B0E4D8 /* toaster_0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0004.png; path = ../../frames/toaster_0004.png; sourceTree = "<group>"; };
+		CB593E042937B5FD00B0E4D8 /* toaster_0023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0023.png; path = ../../frames/toaster_0023.png; sourceTree = "<group>"; };
+		CB593E052937B5FD00B0E4D8 /* police_0023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0023.png; path = ../../frames/police_0023.png; sourceTree = "<group>"; };
+		CB593E062937B5FD00B0E4D8 /* smoke_0023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0023.png; path = ../../frames/smoke_0023.png; sourceTree = "<group>"; };
+		CB593E072937B5FD00B0E4D8 /* toaster_0057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0057.png; path = ../../frames/toaster_0057.png; sourceTree = "<group>"; };
+		CB593E082937B5FD00B0E4D8 /* smoke_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0001.png; path = ../../frames/smoke_0001.png; sourceTree = "<group>"; };
+		CB593E092937B5FD00B0E4D8 /* police_0012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0012.png; path = ../../frames/police_0012.png; sourceTree = "<group>"; };
+		CB593E0A2937B5FD00B0E4D8 /* toaster_0120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0120.png; path = ../../frames/toaster_0120.png; sourceTree = "<group>"; };
+		CB593E0B2937B5FD00B0E4D8 /* smoke_0031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0031.png; path = ../../frames/smoke_0031.png; sourceTree = "<group>"; };
+		CB593E0C2937B5FD00B0E4D8 /* toaster_0112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0112.png; path = ../../frames/toaster_0112.png; sourceTree = "<group>"; };
+		CB593E0D2937B5FD00B0E4D8 /* toaster_0038.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0038.png; path = ../../frames/toaster_0038.png; sourceTree = "<group>"; };
+		CB593E0E2937B5FD00B0E4D8 /* toaster_0072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0072.png; path = ../../frames/toaster_0072.png; sourceTree = "<group>"; };
+		CB593E0F2937B5FD00B0E4D8 /* toaster_0030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0030.png; path = ../../frames/toaster_0030.png; sourceTree = "<group>"; };
+		CB593E102937B5FD00B0E4D8 /* toaster_0062.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0062.png; path = ../../frames/toaster_0062.png; sourceTree = "<group>"; };
+		CB593E112937B5FD00B0E4D8 /* police_0020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0020.png; path = ../../frames/police_0020.png; sourceTree = "<group>"; };
+		CB593E122937B5FE00B0E4D8 /* spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spot.png; path = ../../frames/spot.png; sourceTree = "<group>"; };
+		CB593E132937B5FE00B0E4D8 /* toaster_0088.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0088.png; path = ../../frames/toaster_0088.png; sourceTree = "<group>"; };
+		CB593E142937B5FE00B0E4D8 /* toaster_0047.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0047.png; path = ../../frames/toaster_0047.png; sourceTree = "<group>"; };
+		CB593E152937B5FE00B0E4D8 /* toaster_0074.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0074.png; path = ../../frames/toaster_0074.png; sourceTree = "<group>"; };
+		CB593E162937B5FE00B0E4D8 /* toaster_0035.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0035.png; path = ../../frames/toaster_0035.png; sourceTree = "<group>"; };
+		CB593E172937B5FE00B0E4D8 /* police_0026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0026.png; path = ../../frames/police_0026.png; sourceTree = "<group>"; };
+		CB593E182937B5FE00B0E4D8 /* toaster_0109.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0109.png; path = ../../frames/toaster_0109.png; sourceTree = "<group>"; };
+		CB593E192937B5FE00B0E4D8 /* toaster_0026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0026.png; path = ../../frames/toaster_0026.png; sourceTree = "<group>"; };
+		CB593E1A2937B5FE00B0E4D8 /* toaster_0080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0080.png; path = ../../frames/toaster_0080.png; sourceTree = "<group>"; };
+		CB593E1B2937B5FE00B0E4D8 /* toaster_0040.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0040.png; path = ../../frames/toaster_0040.png; sourceTree = "<group>"; };
+		CB593E1C2937B5FE00B0E4D8 /* toaster_0022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0022.png; path = ../../frames/toaster_0022.png; sourceTree = "<group>"; };
+		CB593E1D2937B5FE00B0E4D8 /* toaster_0013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0013.png; path = ../../frames/toaster_0013.png; sourceTree = "<group>"; };
+		CB593E1E2937B5FE00B0E4D8 /* police_0007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0007.png; path = ../../frames/police_0007.png; sourceTree = "<group>"; };
+		CB593E1F2937B5FE00B0E4D8 /* toaster_0091.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0091.png; path = ../../frames/toaster_0091.png; sourceTree = "<group>"; };
+		CB593E202937B5FE00B0E4D8 /* police_0019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0019.png; path = ../../frames/police_0019.png; sourceTree = "<group>"; };
+		CB593E212937B5FE00B0E4D8 /* toaster_0016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0016.png; path = ../../frames/toaster_0016.png; sourceTree = "<group>"; };
+		CB593E222937B5FE00B0E4D8 /* toaster_0082.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0082.png; path = ../../frames/toaster_0082.png; sourceTree = "<group>"; };
+		CB593E232937B5FE00B0E4D8 /* toaster_0090.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0090.png; path = ../../frames/toaster_0090.png; sourceTree = "<group>"; };
+		CB593E242937B5FE00B0E4D8 /* toaster_0069.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0069.png; path = ../../frames/toaster_0069.png; sourceTree = "<group>"; };
+		CB593E252937B5FE00B0E4D8 /* toaster_0012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0012.png; path = ../../frames/toaster_0012.png; sourceTree = "<group>"; };
+		CB593E262937B5FE00B0E4D8 /* toaster_0077.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0077.png; path = ../../frames/toaster_0077.png; sourceTree = "<group>"; };
+		CB593E272937B5FE00B0E4D8 /* police_0005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0005.png; path = ../../frames/police_0005.png; sourceTree = "<group>"; };
+		CB593E282937B5FE00B0E4D8 /* toaster_0070.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0070.png; path = ../../frames/toaster_0070.png; sourceTree = "<group>"; };
+		CB593E292937B5FE00B0E4D8 /* toaster_0050.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0050.png; path = ../../frames/toaster_0050.png; sourceTree = "<group>"; };
+		CB593E2A2937B5FE00B0E4D8 /* smoke_0007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0007.png; path = ../../frames/smoke_0007.png; sourceTree = "<group>"; };
+		CB593E2B2937B5FE00B0E4D8 /* smoke_0020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0020.png; path = ../../frames/smoke_0020.png; sourceTree = "<group>"; };
+		CB593E2C2937B5FE00B0E4D8 /* toaster_0054.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0054.png; path = ../../frames/toaster_0054.png; sourceTree = "<group>"; };
+		CB593E2D2937B5FE00B0E4D8 /* toaster_0093.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0093.png; path = ../../frames/toaster_0093.png; sourceTree = "<group>"; };
+		CB593E2E2937B5FE00B0E4D8 /* smoke_0011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0011.png; path = ../../frames/smoke_0011.png; sourceTree = "<group>"; };
+		CB593E2F2937B5FE00B0E4D8 /* police_0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0002.png; path = ../../frames/police_0002.png; sourceTree = "<group>"; };
+		CB593E302937B5FE00B0E4D8 /* toaster_0063.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0063.png; path = ../../frames/toaster_0063.png; sourceTree = "<group>"; };
+		CB593E312937B5FE00B0E4D8 /* toaster_0107.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0107.png; path = ../../frames/toaster_0107.png; sourceTree = "<group>"; };
+		CB593E322937B5FE00B0E4D8 /* toaster_0005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0005.png; path = ../../frames/toaster_0005.png; sourceTree = "<group>"; };
+		CB593E332937B5FE00B0E4D8 /* smoke_0014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0014.png; path = ../../frames/smoke_0014.png; sourceTree = "<group>"; };
+		CB593E342937B5FE00B0E4D8 /* toaster_0029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0029.png; path = ../../frames/toaster_0029.png; sourceTree = "<group>"; };
+		CB593E352937B5FE00B0E4D8 /* toaster_0075.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0075.png; path = ../../frames/toaster_0075.png; sourceTree = "<group>"; };
+		CB593E362937B5FE00B0E4D8 /* police_0018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0018.png; path = ../../frames/police_0018.png; sourceTree = "<group>"; };
+		CB593E372937B5FE00B0E4D8 /* toaster_0034.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0034.png; path = ../../frames/toaster_0034.png; sourceTree = "<group>"; };
+		CB593E382937B5FE00B0E4D8 /* toaster_0126.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0126.png; path = ../../frames/toaster_0126.png; sourceTree = "<group>"; };
+		CB593E392937B5FF00B0E4D8 /* toaster_0089.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0089.png; path = ../../frames/toaster_0089.png; sourceTree = "<group>"; };
+		CB593E3A2937B5FF00B0E4D8 /* toaster_0045.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0045.png; path = ../../frames/toaster_0045.png; sourceTree = "<group>"; };
+		CB593E3B2937B5FF00B0E4D8 /* toaster_0065.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0065.png; path = ../../frames/toaster_0065.png; sourceTree = "<group>"; };
+		CB593E3C2937B5FF00B0E4D8 /* toaster_0068.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0068.png; path = ../../frames/toaster_0068.png; sourceTree = "<group>"; };
+		CB593E3D2937B5FF00B0E4D8 /* police_0014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0014.png; path = ../../frames/police_0014.png; sourceTree = "<group>"; };
+		CB593E3E2937B5FF00B0E4D8 /* toaster_0061.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0061.png; path = ../../frames/toaster_0061.png; sourceTree = "<group>"; };
+		CB593E3F2937B5FF00B0E4D8 /* toaster_0092.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0092.png; path = ../../frames/toaster_0092.png; sourceTree = "<group>"; };
+		CB593E402937B5FF00B0E4D8 /* toaster_0095.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0095.png; path = ../../frames/toaster_0095.png; sourceTree = "<group>"; };
+		CB593E412937B5FF00B0E4D8 /* X-wing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "X-wing.png"; path = "../../frames/X-wing.png"; sourceTree = "<group>"; };
+		CB593E422937B5FF00B0E4D8 /* smoke_0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0004.png; path = ../../frames/smoke_0004.png; sourceTree = "<group>"; };
+		CB593E432937B5FF00B0E4D8 /* toaster_0121.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0121.png; path = ../../frames/toaster_0121.png; sourceTree = "<group>"; };
+		CB593E442937B5FF00B0E4D8 /* toaster_0006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0006.png; path = ../../frames/toaster_0006.png; sourceTree = "<group>"; };
+		CB593E452937B5FF00B0E4D8 /* toaster_0108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0108.png; path = ../../frames/toaster_0108.png; sourceTree = "<group>"; };
+		CB593E462937B5FF00B0E4D8 /* smoke_0029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0029.png; path = ../../frames/smoke_0029.png; sourceTree = "<group>"; };
+		CB593E472937B5FF00B0E4D8 /* smoke_0016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0016.png; path = ../../frames/smoke_0016.png; sourceTree = "<group>"; };
+		CB593E482937B5FF00B0E4D8 /* toaster_0028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0028.png; path = ../../frames/toaster_0028.png; sourceTree = "<group>"; };
+		CB593E492937B5FF00B0E4D8 /* toaster_0046.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0046.png; path = ../../frames/toaster_0046.png; sourceTree = "<group>"; };
+		CB593E4A2937B5FF00B0E4D8 /* toaster_0106.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0106.png; path = ../../frames/toaster_0106.png; sourceTree = "<group>"; };
+		CB593E4B2937B5FF00B0E4D8 /* toaster_0125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0125.png; path = ../../frames/toaster_0125.png; sourceTree = "<group>"; };
+		CB593E4C2937B5FF00B0E4D8 /* smoke_0021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0021.png; path = ../../frames/smoke_0021.png; sourceTree = "<group>"; };
+		CB593E4D2937B5FF00B0E4D8 /* police_0025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0025.png; path = ../../frames/police_0025.png; sourceTree = "<group>"; };
+		CB593E4E2937B5FF00B0E4D8 /* toaster_0122.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0122.png; path = ../../frames/toaster_0122.png; sourceTree = "<group>"; };
+		CB593E4F2937B5FF00B0E4D8 /* toaster_0085.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0085.png; path = ../../frames/toaster_0085.png; sourceTree = "<group>"; };
+		CB593E502937B5FF00B0E4D8 /* toaster_0067.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0067.png; path = ../../frames/toaster_0067.png; sourceTree = "<group>"; };
+		CB593E512937B5FF00B0E4D8 /* toaster_0105.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0105.png; path = ../../frames/toaster_0105.png; sourceTree = "<group>"; };
+		CB593E522937B5FF00B0E4D8 /* smoke_0022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0022.png; path = ../../frames/smoke_0022.png; sourceTree = "<group>"; };
+		CB593E532937B5FF00B0E4D8 /* toaster_0078.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0078.png; path = ../../frames/toaster_0078.png; sourceTree = "<group>"; };
+		CB593E542937B5FF00B0E4D8 /* smoke_0006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0006.png; path = ../../frames/smoke_0006.png; sourceTree = "<group>"; };
+		CB593E552937B5FF00B0E4D8 /* police_0010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0010.png; path = ../../frames/police_0010.png; sourceTree = "<group>"; };
+		CB593E562937B5FF00B0E4D8 /* smoke_0009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0009.png; path = ../../frames/smoke_0009.png; sourceTree = "<group>"; };
+		CB593E572937B5FF00B0E4D8 /* police_0016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0016.png; path = ../../frames/police_0016.png; sourceTree = "<group>"; };
+		CB593E582937B5FF00B0E4D8 /* toaster_0031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0031.png; path = ../../frames/toaster_0031.png; sourceTree = "<group>"; };
+		CB593E592937B5FF00B0E4D8 /* toaster_0043.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0043.png; path = ../../frames/toaster_0043.png; sourceTree = "<group>"; };
+		CB593E5A2937B5FF00B0E4D8 /* police_0017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0017.png; path = ../../frames/police_0017.png; sourceTree = "<group>"; };
+		CB593E5B2937B5FF00B0E4D8 /* police_0024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0024.png; path = ../../frames/police_0024.png; sourceTree = "<group>"; };
+		CB593E5C2937B5FF00B0E4D8 /* toaster_0042.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0042.png; path = ../../frames/toaster_0042.png; sourceTree = "<group>"; };
+		CB593E5D2937B5FF00B0E4D8 /* toaster_0036.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0036.png; path = ../../frames/toaster_0036.png; sourceTree = "<group>"; };
+		CB593E5E2937B5FF00B0E4D8 /* toaster_0076.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0076.png; path = ../../frames/toaster_0076.png; sourceTree = "<group>"; };
+		CB593E5F2937B60000B0E4D8 /* toaster_0010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0010.png; path = ../../frames/toaster_0010.png; sourceTree = "<group>"; };
+		CB593E602937B60000B0E4D8 /* toaster_0056.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0056.png; path = ../../frames/toaster_0056.png; sourceTree = "<group>"; };
+		CB593E612937B60000B0E4D8 /* toaster_0017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0017.png; path = ../../frames/toaster_0017.png; sourceTree = "<group>"; };
+		CB593E622937B60000B0E4D8 /* toaster_0014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0014.png; path = ../../frames/toaster_0014.png; sourceTree = "<group>"; };
+		CB593E632937B60000B0E4D8 /* toaster_0098.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0098.png; path = ../../frames/toaster_0098.png; sourceTree = "<group>"; };
+		CB593E642937B60000B0E4D8 /* toaster_0052.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0052.png; path = ../../frames/toaster_0052.png; sourceTree = "<group>"; };
+		CB593E652937B60000B0E4D8 /* police_0008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0008.png; path = ../../frames/police_0008.png; sourceTree = "<group>"; };
+		CB593E662937B60000B0E4D8 /* toaster_0116.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0116.png; path = ../../frames/toaster_0116.png; sourceTree = "<group>"; };
+		CB593E672937B60000B0E4D8 /* toaster_0024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0024.png; path = ../../frames/toaster_0024.png; sourceTree = "<group>"; };
+		CB593E682937B60000B0E4D8 /* smoke_0005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0005.png; path = ../../frames/smoke_0005.png; sourceTree = "<group>"; };
+		CB593E692937B60000B0E4D8 /* toast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toast.png; path = ../../frames/toast.png; sourceTree = "<group>"; };
+		CB593E6A2937B60000B0E4D8 /* smoke_0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0002.png; path = ../../frames/smoke_0002.png; sourceTree = "<group>"; };
+		CB593E6B2937B60000B0E4D8 /* police_0011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0011.png; path = ../../frames/police_0011.png; sourceTree = "<group>"; };
+		CB593E6C2937B60000B0E4D8 /* toaster_0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0002.png; path = ../../frames/toaster_0002.png; sourceTree = "<group>"; };
+		CB593E6D2937B60000B0E4D8 /* toaster_0113.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0113.png; path = ../../frames/toaster_0113.png; sourceTree = "<group>"; };
+		CB593E6E2937B60000B0E4D8 /* smoke_0024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0024.png; path = ../../frames/smoke_0024.png; sourceTree = "<group>"; };
+		CB593E6F2937B60000B0E4D8 /* toaster_0081.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0081.png; path = ../../frames/toaster_0081.png; sourceTree = "<group>"; };
+		CB593E702937B60000B0E4D8 /* toaster_0033.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0033.png; path = ../../frames/toaster_0033.png; sourceTree = "<group>"; };
+		CB593E712937B60000B0E4D8 /* toaster_0037.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0037.png; path = ../../frames/toaster_0037.png; sourceTree = "<group>"; };
+		CB593E722937B60000B0E4D8 /* smoke_0026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0026.png; path = ../../frames/smoke_0026.png; sourceTree = "<group>"; };
+		CB593E732937B60000B0E4D8 /* toaster_0130.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0130.png; path = ../../frames/toaster_0130.png; sourceTree = "<group>"; };
+		CB593E742937B60000B0E4D8 /* toaster_0027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0027.png; path = ../../frames/toaster_0027.png; sourceTree = "<group>"; };
+		CB593E752937B60000B0E4D8 /* police_0006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0006.png; path = ../../frames/police_0006.png; sourceTree = "<group>"; };
+		CB593E762937B60000B0E4D8 /* smoke_0008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0008.png; path = ../../frames/smoke_0008.png; sourceTree = "<group>"; };
+		CB593E772937B60000B0E4D8 /* smoke_0010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0010.png; path = ../../frames/smoke_0010.png; sourceTree = "<group>"; };
+		CB593E782937B60000B0E4D8 /* toaster_0055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0055.png; path = ../../frames/toaster_0055.png; sourceTree = "<group>"; };
+		CB593E792937B60000B0E4D8 /* toaster_0021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0021.png; path = ../../frames/toaster_0021.png; sourceTree = "<group>"; };
+		CB593E7A2937B60000B0E4D8 /* toaster_0019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0019.png; path = ../../frames/toaster_0019.png; sourceTree = "<group>"; };
+		CB593E7B2937B60000B0E4D8 /* toaster_0015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0015.png; path = ../../frames/toaster_0015.png; sourceTree = "<group>"; };
+		CB593E7C2937B60000B0E4D8 /* smoke_0030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0030.png; path = ../../frames/smoke_0030.png; sourceTree = "<group>"; };
+		CB593E7D2937B60000B0E4D8 /* toaster_0110.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0110.png; path = ../../frames/toaster_0110.png; sourceTree = "<group>"; };
+		CB593E7E2937B60000B0E4D8 /* toaster_0058.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0058.png; path = ../../frames/toaster_0058.png; sourceTree = "<group>"; };
+		CB593E7F2937B60000B0E4D8 /* toaster_0053.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0053.png; path = ../../frames/toaster_0053.png; sourceTree = "<group>"; };
+		CB593E802937B60000B0E4D8 /* smoke_0028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0028.png; path = ../../frames/smoke_0028.png; sourceTree = "<group>"; };
+		CB593E812937B60000B0E4D8 /* toaster_0009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0009.png; path = ../../frames/toaster_0009.png; sourceTree = "<group>"; };
+		CB593E822937B60000B0E4D8 /* toaster_0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0000.png; path = ../../frames/toaster_0000.png; sourceTree = "<group>"; };
+		CB593E832937B60000B0E4D8 /* toaster_0008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0008.png; path = ../../frames/toaster_0008.png; sourceTree = "<group>"; };
+		CB593E842937B60000B0E4D8 /* toaster_0114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0114.png; path = ../../frames/toaster_0114.png; sourceTree = "<group>"; };
+		CB593E852937B60000B0E4D8 /* smoke_0018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0018.png; path = ../../frames/smoke_0018.png; sourceTree = "<group>"; };
+		CB593E862937B60000B0E4D8 /* toaster_0066.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0066.png; path = ../../frames/toaster_0066.png; sourceTree = "<group>"; };
+		CB593E872937B60100B0E4D8 /* police_0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0004.png; path = ../../frames/police_0004.png; sourceTree = "<group>"; };
+		CB593E882937B60100B0E4D8 /* toaster_0025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0025.png; path = ../../frames/toaster_0025.png; sourceTree = "<group>"; };
+		CB593E892937B60100B0E4D8 /* toaster_0041.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0041.png; path = ../../frames/toaster_0041.png; sourceTree = "<group>"; };
+		CB593E8A2937B60100B0E4D8 /* smoke_0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0000.png; path = ../../frames/smoke_0000.png; sourceTree = "<group>"; };
+		CB593E8B2937B60100B0E4D8 /* toaster_0127.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0127.png; path = ../../frames/toaster_0127.png; sourceTree = "<group>"; };
+		CB593E8C2937B60100B0E4D8 /* police_0013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0013.png; path = ../../frames/police_0013.png; sourceTree = "<group>"; };
+		CB593E8D2937B60100B0E4D8 /* toaster_0124.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0124.png; path = ../../frames/toaster_0124.png; sourceTree = "<group>"; };
+		CB593E8E2937B60100B0E4D8 /* toaster_0103.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0103.png; path = ../../frames/toaster_0103.png; sourceTree = "<group>"; };
+		CB593E8F2937B60100B0E4D8 /* toaster_0099.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0099.png; path = ../../frames/toaster_0099.png; sourceTree = "<group>"; };
+		CB593E902937B60100B0E4D8 /* police_0028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0028.png; path = ../../frames/police_0028.png; sourceTree = "<group>"; };
+		CB593E912937B60100B0E4D8 /* toaster_0048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0048.png; path = ../../frames/toaster_0048.png; sourceTree = "<group>"; };
+		CB593E922937B60100B0E4D8 /* toaster_0007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0007.png; path = ../../frames/toaster_0007.png; sourceTree = "<group>"; };
+		CB593E932937B60100B0E4D8 /* smoke_0019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0019.png; path = ../../frames/smoke_0019.png; sourceTree = "<group>"; };
+		CB593E942937B60100B0E4D8 /* police_0022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0022.png; path = ../../frames/police_0022.png; sourceTree = "<group>"; };
+		CB593E952937B60100B0E4D8 /* smoke_0017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0017.png; path = ../../frames/smoke_0017.png; sourceTree = "<group>"; };
+		CB593E962937B60100B0E4D8 /* toaster_0086.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0086.png; path = ../../frames/toaster_0086.png; sourceTree = "<group>"; };
+		CB593E972937B60100B0E4D8 /* toaster_0049.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0049.png; path = ../../frames/toaster_0049.png; sourceTree = "<group>"; };
+		CB593E982937B60100B0E4D8 /* police_0009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0009.png; path = ../../frames/police_0009.png; sourceTree = "<group>"; };
+		CB593E992937B60100B0E4D8 /* smoke_0013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoke_0013.png; path = ../../frames/smoke_0013.png; sourceTree = "<group>"; };
+		CB593E9A2937B60100B0E4D8 /* toaster_0096.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0096.png; path = ../../frames/toaster_0096.png; sourceTree = "<group>"; };
+		CB593E9B2937B60100B0E4D8 /* toaster_0102.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0102.png; path = ../../frames/toaster_0102.png; sourceTree = "<group>"; };
+		CB593E9C2937B60100B0E4D8 /* police_0021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0021.png; path = ../../frames/police_0021.png; sourceTree = "<group>"; };
+		CB593E9D2937B60100B0E4D8 /* police_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0001.png; path = ../../frames/police_0001.png; sourceTree = "<group>"; };
+		CB593E9E2937B60100B0E4D8 /* toaster_0003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0003.png; path = ../../frames/toaster_0003.png; sourceTree = "<group>"; };
+		CB593E9F2937B60100B0E4D8 /* police_0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = police_0000.png; path = ../../frames/police_0000.png; sourceTree = "<group>"; };
+		CB593EA02937B60100B0E4D8 /* toaster_0111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toaster_0111.png; path = ../../frames/toaster_0111.png; sourceTree = "<group>"; };
+		CBEEC09B293CA19E00285E4F /* thumbnail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@3x.png"; path = "../resources/thumbnail@3x.png"; sourceTree = "<group>"; };
+		D3AF3D8CB2AF47F0B802AC7F /* UrlImplCocoa.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = UrlImplCocoa.mm; path = ../../../../../../../cinder_0.9.2_mac/src/cinder/UrlImplCocoa.mm; sourceTree = "<group>"; };
+		DACDA885508E422495712B8B /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = thumbnail.png; path = ../resources/thumbnail.png; sourceTree = "<group>"; };
+		F7B5D0DF93B446669F2BBF7C /* AppScreenSaver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = AppScreenSaver.cpp; path = ../../../../../../../cinder_0.9.2_mac/src/cinder/app/AppScreenSaver.cpp; sourceTree = "<group>"; };
+		FB5552C0892544BDAF26B369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+				4197D75EC04E4255BB0AA2FA /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				20A59B17F0D64D77B566E0E6 /* FlyingToastersScreensaver.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* FlyingToastersScreensaver.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* FlyingToastersScreensaver */ = {
+			isa = PBXGroup;
+			children = (
+				CBE01430292E7568008FCEFA /* src_common */,
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				AF8C140A05D048D9A0FEFD04 /* Cinder */,
+			);
+			name = FlyingToastersScreensaver;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0037365B033C43499FF2E4E6 /* Resources.h */,
+				9AFB01572F17412A961E5ABF /* FlyingToastersScreensaver_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB5552C0892544BDAF26B369 /* Info.plist */,
+				DACDA885508E422495712B8B /* thumbnail.png */,
+				58114F2CDC2C4B5584047D46 /* thumbnail@2x.png */,
+				CBEEC09B293CA19E00285E4F /* thumbnail@3x.png */,
+				CB593DEA2937B5FC00B0E4D8 /* laser-bolt.png */,
+				CB593E9F2937B60100B0E4D8 /* police_0000.png */,
+				CB593E9D2937B60100B0E4D8 /* police_0001.png */,
+				CB593E2F2937B5FE00B0E4D8 /* police_0002.png */,
+				CB593DE02937B5FC00B0E4D8 /* police_0003.png */,
+				CB593E872937B60100B0E4D8 /* police_0004.png */,
+				CB593E272937B5FE00B0E4D8 /* police_0005.png */,
+				CB593E752937B60000B0E4D8 /* police_0006.png */,
+				CB593E1E2937B5FE00B0E4D8 /* police_0007.png */,
+				CB593E652937B60000B0E4D8 /* police_0008.png */,
+				CB593E982937B60100B0E4D8 /* police_0009.png */,
+				CB593E552937B5FF00B0E4D8 /* police_0010.png */,
+				CB593E6B2937B60000B0E4D8 /* police_0011.png */,
+				CB593E092937B5FD00B0E4D8 /* police_0012.png */,
+				CB593E8C2937B60100B0E4D8 /* police_0013.png */,
+				CB593E3D2937B5FF00B0E4D8 /* police_0014.png */,
+				CB593DFE2937B5FD00B0E4D8 /* police_0015.png */,
+				CB593E572937B5FF00B0E4D8 /* police_0016.png */,
+				CB593E5A2937B5FF00B0E4D8 /* police_0017.png */,
+				CB593E362937B5FE00B0E4D8 /* police_0018.png */,
+				CB593E202937B5FE00B0E4D8 /* police_0019.png */,
+				CB593E112937B5FD00B0E4D8 /* police_0020.png */,
+				CB593E9C2937B60100B0E4D8 /* police_0021.png */,
+				CB593E942937B60100B0E4D8 /* police_0022.png */,
+				CB593E052937B5FD00B0E4D8 /* police_0023.png */,
+				CB593E5B2937B5FF00B0E4D8 /* police_0024.png */,
+				CB593E4D2937B5FF00B0E4D8 /* police_0025.png */,
+				CB593E172937B5FE00B0E4D8 /* police_0026.png */,
+				CB593DDF2937B5FC00B0E4D8 /* police_0027.png */,
+				CB593E902937B60100B0E4D8 /* police_0028.png */,
+				CB593DFB2937B5FD00B0E4D8 /* police_0029.png */,
+				CB593E8A2937B60100B0E4D8 /* smoke_0000.png */,
+				CB593E082937B5FD00B0E4D8 /* smoke_0001.png */,
+				CB593E6A2937B60000B0E4D8 /* smoke_0002.png */,
+				CB593DF02937B5FD00B0E4D8 /* smoke_0003.png */,
+				CB593E422937B5FF00B0E4D8 /* smoke_0004.png */,
+				CB593E682937B60000B0E4D8 /* smoke_0005.png */,
+				CB593E542937B5FF00B0E4D8 /* smoke_0006.png */,
+				CB593E2A2937B5FE00B0E4D8 /* smoke_0007.png */,
+				CB593E762937B60000B0E4D8 /* smoke_0008.png */,
+				CB593E562937B5FF00B0E4D8 /* smoke_0009.png */,
+				CB593E772937B60000B0E4D8 /* smoke_0010.png */,
+				CB593E2E2937B5FE00B0E4D8 /* smoke_0011.png */,
+				CB593DF32937B5FD00B0E4D8 /* smoke_0012.png */,
+				CB593E992937B60100B0E4D8 /* smoke_0013.png */,
+				CB593E332937B5FE00B0E4D8 /* smoke_0014.png */,
+				CB593DF92937B5FD00B0E4D8 /* smoke_0015.png */,
+				CB593E472937B5FF00B0E4D8 /* smoke_0016.png */,
+				CB593E952937B60100B0E4D8 /* smoke_0017.png */,
+				CB593E852937B60000B0E4D8 /* smoke_0018.png */,
+				CB593E932937B60100B0E4D8 /* smoke_0019.png */,
+				CB593E2B2937B5FE00B0E4D8 /* smoke_0020.png */,
+				CB593E4C2937B5FF00B0E4D8 /* smoke_0021.png */,
+				CB593E522937B5FF00B0E4D8 /* smoke_0022.png */,
+				CB593E062937B5FD00B0E4D8 /* smoke_0023.png */,
+				CB593E6E2937B60000B0E4D8 /* smoke_0024.png */,
+				CB593DFD2937B5FD00B0E4D8 /* smoke_0025.png */,
+				CB593E722937B60000B0E4D8 /* smoke_0026.png */,
+				CB593DDA2937B5FC00B0E4D8 /* smoke_0027.png */,
+				CB593E802937B60000B0E4D8 /* smoke_0028.png */,
+				CB593E462937B5FF00B0E4D8 /* smoke_0029.png */,
+				CB593E7C2937B60000B0E4D8 /* smoke_0030.png */,
+				CB593E0B2937B5FD00B0E4D8 /* smoke_0031.png */,
+				CB593E122937B5FE00B0E4D8 /* spot.png */,
+				CB593DF42937B5FD00B0E4D8 /* TIE-fighter.png */,
+				CB593DDD2937B5FC00B0E4D8 /* toast-burnt.png */,
+				CB593E692937B60000B0E4D8 /* toast.png */,
+				CB593E822937B60000B0E4D8 /* toaster_0000.png */,
+				CB593E002937B5FD00B0E4D8 /* toaster_0001.png */,
+				CB593E6C2937B60000B0E4D8 /* toaster_0002.png */,
+				CB593E9E2937B60100B0E4D8 /* toaster_0003.png */,
+				CB593E032937B5FD00B0E4D8 /* toaster_0004.png */,
+				CB593E322937B5FE00B0E4D8 /* toaster_0005.png */,
+				CB593E442937B5FF00B0E4D8 /* toaster_0006.png */,
+				CB593E922937B60100B0E4D8 /* toaster_0007.png */,
+				CB593E832937B60000B0E4D8 /* toaster_0008.png */,
+				CB593E812937B60000B0E4D8 /* toaster_0009.png */,
+				CB593E5F2937B60000B0E4D8 /* toaster_0010.png */,
+				CB593DE12937B5FC00B0E4D8 /* toaster_0011.png */,
+				CB593E252937B5FE00B0E4D8 /* toaster_0012.png */,
+				CB593E1D2937B5FE00B0E4D8 /* toaster_0013.png */,
+				CB593E622937B60000B0E4D8 /* toaster_0014.png */,
+				CB593E7B2937B60000B0E4D8 /* toaster_0015.png */,
+				CB593E212937B5FE00B0E4D8 /* toaster_0016.png */,
+				CB593E612937B60000B0E4D8 /* toaster_0017.png */,
+				CB593DEB2937B5FC00B0E4D8 /* toaster_0018.png */,
+				CB593E7A2937B60000B0E4D8 /* toaster_0019.png */,
+				CB593DF22937B5FD00B0E4D8 /* toaster_0020.png */,
+				CB593E792937B60000B0E4D8 /* toaster_0021.png */,
+				CB593E1C2937B5FE00B0E4D8 /* toaster_0022.png */,
+				CB593E042937B5FD00B0E4D8 /* toaster_0023.png */,
+				CB593E672937B60000B0E4D8 /* toaster_0024.png */,
+				CB593E882937B60100B0E4D8 /* toaster_0025.png */,
+				CB593E192937B5FE00B0E4D8 /* toaster_0026.png */,
+				CB593E742937B60000B0E4D8 /* toaster_0027.png */,
+				CB593E482937B5FF00B0E4D8 /* toaster_0028.png */,
+				CB593E342937B5FE00B0E4D8 /* toaster_0029.png */,
+				CB593E0F2937B5FD00B0E4D8 /* toaster_0030.png */,
+				CB593E582937B5FF00B0E4D8 /* toaster_0031.png */,
+				CB593DFA2937B5FD00B0E4D8 /* toaster_0032.png */,
+				CB593E702937B60000B0E4D8 /* toaster_0033.png */,
+				CB593E372937B5FE00B0E4D8 /* toaster_0034.png */,
+				CB593E162937B5FE00B0E4D8 /* toaster_0035.png */,
+				CB593E5D2937B5FF00B0E4D8 /* toaster_0036.png */,
+				CB593E712937B60000B0E4D8 /* toaster_0037.png */,
+				CB593E0D2937B5FD00B0E4D8 /* toaster_0038.png */,
+				CB593DDE2937B5FC00B0E4D8 /* toaster_0039.png */,
+				CB593E1B2937B5FE00B0E4D8 /* toaster_0040.png */,
+				CB593E892937B60100B0E4D8 /* toaster_0041.png */,
+				CB593E5C2937B5FF00B0E4D8 /* toaster_0042.png */,
+				CB593E592937B5FF00B0E4D8 /* toaster_0043.png */,
+				CB593DE82937B5FC00B0E4D8 /* toaster_0044.png */,
+				CB593E3A2937B5FF00B0E4D8 /* toaster_0045.png */,
+				CB593E492937B5FF00B0E4D8 /* toaster_0046.png */,
+				CB593E142937B5FE00B0E4D8 /* toaster_0047.png */,
+				CB593E912937B60100B0E4D8 /* toaster_0048.png */,
+				CB593E972937B60100B0E4D8 /* toaster_0049.png */,
+				CB593E292937B5FE00B0E4D8 /* toaster_0050.png */,
+				CB593DE92937B5FC00B0E4D8 /* toaster_0051.png */,
+				CB593E642937B60000B0E4D8 /* toaster_0052.png */,
+				CB593E7F2937B60000B0E4D8 /* toaster_0053.png */,
+				CB593E2C2937B5FE00B0E4D8 /* toaster_0054.png */,
+				CB593E782937B60000B0E4D8 /* toaster_0055.png */,
+				CB593E602937B60000B0E4D8 /* toaster_0056.png */,
+				CB593E072937B5FD00B0E4D8 /* toaster_0057.png */,
+				CB593E7E2937B60000B0E4D8 /* toaster_0058.png */,
+				CB593DEF2937B5FD00B0E4D8 /* toaster_0059.png */,
+				CB593DF82937B5FD00B0E4D8 /* toaster_0060.png */,
+				CB593E3E2937B5FF00B0E4D8 /* toaster_0061.png */,
+				CB593E102937B5FD00B0E4D8 /* toaster_0062.png */,
+				CB593E302937B5FE00B0E4D8 /* toaster_0063.png */,
+				CB593DEE2937B5FD00B0E4D8 /* toaster_0064.png */,
+				CB593E3B2937B5FF00B0E4D8 /* toaster_0065.png */,
+				CB593E862937B60000B0E4D8 /* toaster_0066.png */,
+				CB593E502937B5FF00B0E4D8 /* toaster_0067.png */,
+				CB593E3C2937B5FF00B0E4D8 /* toaster_0068.png */,
+				CB593E242937B5FE00B0E4D8 /* toaster_0069.png */,
+				CB593E282937B5FE00B0E4D8 /* toaster_0070.png */,
+				CB593E022937B5FD00B0E4D8 /* toaster_0071.png */,
+				CB593E0E2937B5FD00B0E4D8 /* toaster_0072.png */,
+				CB593DED2937B5FD00B0E4D8 /* toaster_0073.png */,
+				CB593E152937B5FE00B0E4D8 /* toaster_0074.png */,
+				CB593E352937B5FE00B0E4D8 /* toaster_0075.png */,
+				CB593E5E2937B5FF00B0E4D8 /* toaster_0076.png */,
+				CB593E262937B5FE00B0E4D8 /* toaster_0077.png */,
+				CB593E532937B5FF00B0E4D8 /* toaster_0078.png */,
+				CB593DFC2937B5FD00B0E4D8 /* toaster_0079.png */,
+				CB593E1A2937B5FE00B0E4D8 /* toaster_0080.png */,
+				CB593E6F2937B60000B0E4D8 /* toaster_0081.png */,
+				CB593E222937B5FE00B0E4D8 /* toaster_0082.png */,
+				CB593DE22937B5FC00B0E4D8 /* toaster_0083.png */,
+				CB593DF12937B5FD00B0E4D8 /* toaster_0084.png */,
+				CB593E4F2937B5FF00B0E4D8 /* toaster_0085.png */,
+				CB593E962937B60100B0E4D8 /* toaster_0086.png */,
+				CB593DFF2937B5FD00B0E4D8 /* toaster_0087.png */,
+				CB593E132937B5FE00B0E4D8 /* toaster_0088.png */,
+				CB593E392937B5FF00B0E4D8 /* toaster_0089.png */,
+				CB593E232937B5FE00B0E4D8 /* toaster_0090.png */,
+				CB593E1F2937B5FE00B0E4D8 /* toaster_0091.png */,
+				CB593E3F2937B5FF00B0E4D8 /* toaster_0092.png */,
+				CB593E2D2937B5FE00B0E4D8 /* toaster_0093.png */,
+				CB593DEC2937B5FD00B0E4D8 /* toaster_0094.png */,
+				CB593E402937B5FF00B0E4D8 /* toaster_0095.png */,
+				CB593E9A2937B60100B0E4D8 /* toaster_0096.png */,
+				CB593DDB2937B5FC00B0E4D8 /* toaster_0097.png */,
+				CB593E632937B60000B0E4D8 /* toaster_0098.png */,
+				CB593E8F2937B60100B0E4D8 /* toaster_0099.png */,
+				CB593DDC2937B5FC00B0E4D8 /* toaster_0100.png */,
+				CB593DE32937B5FC00B0E4D8 /* toaster_0101.png */,
+				CB593E9B2937B60100B0E4D8 /* toaster_0102.png */,
+				CB593E8E2937B60100B0E4D8 /* toaster_0103.png */,
+				CB593DE42937B5FC00B0E4D8 /* toaster_0104.png */,
+				CB593E512937B5FF00B0E4D8 /* toaster_0105.png */,
+				CB593E4A2937B5FF00B0E4D8 /* toaster_0106.png */,
+				CB593E312937B5FE00B0E4D8 /* toaster_0107.png */,
+				CB593E452937B5FF00B0E4D8 /* toaster_0108.png */,
+				CB593E182937B5FE00B0E4D8 /* toaster_0109.png */,
+				CB593E7D2937B60000B0E4D8 /* toaster_0110.png */,
+				CB593EA02937B60100B0E4D8 /* toaster_0111.png */,
+				CB593E0C2937B5FD00B0E4D8 /* toaster_0112.png */,
+				CB593E6D2937B60000B0E4D8 /* toaster_0113.png */,
+				CB593E842937B60000B0E4D8 /* toaster_0114.png */,
+				CB593E012937B5FD00B0E4D8 /* toaster_0115.png */,
+				CB593E662937B60000B0E4D8 /* toaster_0116.png */,
+				CB593DF62937B5FD00B0E4D8 /* toaster_0117.png */,
+				CB593DE62937B5FC00B0E4D8 /* toaster_0118.png */,
+				CB593DF72937B5FD00B0E4D8 /* toaster_0119.png */,
+				CB593E0A2937B5FD00B0E4D8 /* toaster_0120.png */,
+				CB593E432937B5FF00B0E4D8 /* toaster_0121.png */,
+				CB593E4E2937B5FF00B0E4D8 /* toaster_0122.png */,
+				CB593DE72937B5FC00B0E4D8 /* toaster_0123.png */,
+				CB593E8D2937B60100B0E4D8 /* toaster_0124.png */,
+				CB593E4B2937B5FF00B0E4D8 /* toaster_0125.png */,
+				CB593E382937B5FE00B0E4D8 /* toaster_0126.png */,
+				CB593E8B2937B60100B0E4D8 /* toaster_0127.png */,
+				CB593DF52937B5FD00B0E4D8 /* toaster_0128.png */,
+				CB593DE52937B5FC00B0E4D8 /* toaster_0129.png */,
+				CB593E732937B60000B0E4D8 /* toaster_0130.png */,
+				CB593E412937B5FF00B0E4D8 /* X-wing.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				13300E35DF8B4BA8BDBCF821 /* ScreenSaver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45B6FBCCB8F54295A20DC020 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				79A23B7390D1481E84D6099F /* cinder */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		79A23B7390D1481E84D6099F /* cinder */ = {
+			isa = PBXGroup;
+			children = (
+				907D7318B07F42E78FBAD9F0 /* app */,
+				D3AF3D8CB2AF47F0B802AC7F /* UrlImplCocoa.mm */,
+			);
+			name = cinder;
+			sourceTree = "<group>";
+		};
+		907D7318B07F42E78FBAD9F0 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				D1C88F3D24A24840BE6F1B25 /* cocoa */,
+				F7B5D0DF93B446669F2BBF7C /* AppScreenSaver.cpp */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		AF8C140A05D048D9A0FEFD04 /* Cinder */ = {
+			isa = PBXGroup;
+			children = (
+				45B6FBCCB8F54295A20DC020 /* src */,
+			);
+			name = Cinder;
+			sourceTree = "<group>";
+		};
+		CBE01430292E7568008FCEFA /* src_common */ = {
+			isa = PBXGroup;
+			children = (
+				CB40723D293678AD00C2EF10 /* FlyingToasters.cpp */,
+				CB407235293678AD00C2EF10 /* FlyingToasters.hpp */,
+				CB40723B293678AD00C2EF10 /* LaserBolt.hpp */,
+				CB40723C293678AD00C2EF10 /* PoliceToaster.hpp */,
+				CB407239293678AD00C2EF10 /* Smoke.hpp */,
+				CB407233293678AD00C2EF10 /* Sprite.cpp */,
+				CB407234293678AD00C2EF10 /* Sprite.hpp */,
+				CB407232293678AD00C2EF10 /* Sprites.hpp */,
+				CB407236293678AD00C2EF10 /* TIEToast.hpp */,
+				CB40723A293678AD00C2EF10 /* Toast.hpp */,
+				CB407238293678AD00C2EF10 /* ToastBurnt.hpp */,
+				CB40723E293678AD00C2EF10 /* Toaster.hpp */,
+				CB407237293678AD00C2EF10 /* XWingToast.hpp */,
+			);
+			name = src_common;
+			path = ../../src_common;
+			sourceTree = "<group>";
+		};
+		D1C88F3D24A24840BE6F1B25 /* cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				AF24855AEC794AD695D5C5E0 /* RendererImplGlMac.mm */,
+				94BA75AF26244D3CA9AF4988 /* CinderViewMac.mm */,
+				8D623A3A47D14C6FBB5D3F20 /* AppImplMacScreenSaver.mm */,
+			);
+			name = cocoa;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* FlyingToastersScreensaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "FlyingToastersScreensaver" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyingToastersScreensaver;
+			productInstallPath = "$(HOME)/Applications";
+			productName = FlyingToastersScreensaver;
+			productReference = 8D1107320486CEB800E47090 /* FlyingToastersScreensaver.saver */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						DevelopmentTeam = XESDTU2665;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FlyingToastersScreensaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				de,
+				ja,
+				Base,
+				en,
+				fr,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* FlyingToastersScreensaver */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* FlyingToastersScreensaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB593F142937B60100B0E4D8 /* police_0025.png in Resources */,
+				CB593EF52937B60100B0E4D8 /* smoke_0011.png in Resources */,
+				CB593F5B2937B60200B0E4D8 /* police_0022.png in Resources */,
+				CB593F1C2937B60100B0E4D8 /* police_0010.png in Resources */,
+				CB593F002937B60100B0E4D8 /* toaster_0089.png in Resources */,
+				CB593F582937B60200B0E4D8 /* toaster_0048.png in Resources */,
+				CB593ECF2937B60100B0E4D8 /* smoke_0001.png in Resources */,
+				CB593ED32937B60100B0E4D8 /* toaster_0112.png in Resources */,
+				CB593EB82937B60100B0E4D8 /* toaster_0084.png in Resources */,
+				CB593EC82937B60100B0E4D8 /* toaster_0115.png in Resources */,
+				CBEEC09C293CA19E00285E4F /* thumbnail@3x.png in Resources */,
+				CB593EAF2937B60100B0E4D8 /* toaster_0044.png in Resources */,
+				CB593ED82937B60100B0E4D8 /* police_0020.png in Resources */,
+				CB593F422937B60200B0E4D8 /* toaster_0015.png in Resources */,
+				CB593EB32937B60100B0E4D8 /* toaster_0094.png in Resources */,
+				CB593F512937B60200B0E4D8 /* smoke_0000.png in Resources */,
+				CB593EC62937B60100B0E4D8 /* toaster_0087.png in Resources */,
+				CB593F492937B60200B0E4D8 /* toaster_0000.png in Resources */,
+				CB593EA22937B60100B0E4D8 /* toaster_0097.png in Resources */,
+				CB593F362937B60200B0E4D8 /* toaster_0081.png in Resources */,
+				CB593F342937B60200B0E4D8 /* toaster_0113.png in Resources */,
+				CB593EB72937B60100B0E4D8 /* smoke_0003.png in Resources */,
+				CB593EAB2937B60100B0E4D8 /* toaster_0104.png in Resources */,
+				CB593F012937B60100B0E4D8 /* toaster_0045.png in Resources */,
+				CB593F1F2937B60100B0E4D8 /* toaster_0031.png in Resources */,
+				CB593EBD2937B60100B0E4D8 /* toaster_0117.png in Resources */,
+				0F9A7E92C810456B971CFB22 /* thumbnail.png in Resources */,
+				CB593F632937B60200B0E4D8 /* police_0021.png in Resources */,
+				CB593EEA2937B60100B0E4D8 /* toaster_0090.png in Resources */,
+				CB593EFD2937B60100B0E4D8 /* police_0018.png in Resources */,
+				CB593ECD2937B60100B0E4D8 /* smoke_0023.png in Resources */,
+				CB593F652937B60200B0E4D8 /* toaster_0003.png in Resources */,
+				CB593EFA2937B60100B0E4D8 /* smoke_0014.png in Resources */,
+				CB593ED72937B60100B0E4D8 /* toaster_0062.png in Resources */,
+				CB593EB02937B60100B0E4D8 /* toaster_0051.png in Resources */,
+				CB593F3C2937B60200B0E4D8 /* police_0006.png in Resources */,
+				CB593EE22937B60100B0E4D8 /* toaster_0040.png in Resources */,
+				CB593EA72937B60100B0E4D8 /* police_0003.png in Resources */,
+				CB593EB12937B60100B0E4D8 /* laser-bolt.png in Resources */,
+				CB593EF72937B60100B0E4D8 /* toaster_0063.png in Resources */,
+				CB593F4F2937B60200B0E4D8 /* toaster_0025.png in Resources */,
+				CB593ECB2937B60100B0E4D8 /* toaster_0023.png in Resources */,
+				CB593ED12937B60100B0E4D8 /* toaster_0120.png in Resources */,
+				CB593F2B2937B60100B0E4D8 /* toaster_0052.png in Resources */,
+				CB593EFB2937B60100B0E4D8 /* toaster_0029.png in Resources */,
+				CB593EA12937B60100B0E4D8 /* smoke_0027.png in Resources */,
+				CB593F2A2937B60100B0E4D8 /* toaster_0098.png in Resources */,
+				CB593F4A2937B60200B0E4D8 /* toaster_0008.png in Resources */,
+				CB593EE62937B60100B0E4D8 /* toaster_0091.png in Resources */,
+				CB593F282937B60100B0E4D8 /* toaster_0017.png in Resources */,
+				CB593F352937B60200B0E4D8 /* smoke_0024.png in Resources */,
+				CB593F3A2937B60200B0E4D8 /* toaster_0130.png in Resources */,
+				CB593F5E2937B60200B0E4D8 /* toaster_0049.png in Resources */,
+				CB593F082937B60100B0E4D8 /* X-wing.png in Resources */,
+				CB593ECE2937B60100B0E4D8 /* toaster_0057.png in Resources */,
+				CB593F112937B60100B0E4D8 /* toaster_0106.png in Resources */,
+				CB593F1E2937B60100B0E4D8 /* police_0016.png in Resources */,
+				CB593F382937B60200B0E4D8 /* toaster_0037.png in Resources */,
+				CB593EEC2937B60100B0E4D8 /* toaster_0012.png in Resources */,
+				CB593F592937B60200B0E4D8 /* toaster_0007.png in Resources */,
+				CB593EA42937B60100B0E4D8 /* toast-burnt.png in Resources */,
+				CB593F3D2937B60200B0E4D8 /* smoke_0008.png in Resources */,
+				CB593EDC2937B60100B0E4D8 /* toaster_0074.png in Resources */,
+				CB593ECC2937B60100B0E4D8 /* police_0023.png in Resources */,
+				CB593EC92937B60100B0E4D8 /* toaster_0071.png in Resources */,
+				CB593F522937B60200B0E4D8 /* toaster_0127.png in Resources */,
+				CB593EE92937B60100B0E4D8 /* toaster_0082.png in Resources */,
+				CB593ED62937B60100B0E4D8 /* toaster_0030.png in Resources */,
+				CB593ED92937B60100B0E4D8 /* spot.png in Resources */,
+				CB593EE02937B60100B0E4D8 /* toaster_0026.png in Resources */,
+				CB593F472937B60200B0E4D8 /* smoke_0028.png in Resources */,
+				CB593EB62937B60100B0E4D8 /* toaster_0059.png in Resources */,
+				CB593F2D2937B60100B0E4D8 /* toaster_0116.png in Resources */,
+				CB593F172937B60100B0E4D8 /* toaster_0067.png in Resources */,
+				CB593EE12937B60100B0E4D8 /* toaster_0080.png in Resources */,
+				CB593F482937B60200B0E4D8 /* toaster_0009.png in Resources */,
+				CB593F642937B60200B0E4D8 /* police_0001.png in Resources */,
+				CB593F022937B60100B0E4D8 /* toaster_0065.png in Resources */,
+				CB593F432937B60200B0E4D8 /* smoke_0030.png in Resources */,
+				CB593F232937B60100B0E4D8 /* toaster_0042.png in Resources */,
+				CB593EDA2937B60100B0E4D8 /* toaster_0088.png in Resources */,
+				CB593EBC2937B60100B0E4D8 /* toaster_0128.png in Resources */,
+				CB593F2F2937B60200B0E4D8 /* smoke_0005.png in Resources */,
+				CB593F2E2937B60100B0E4D8 /* toaster_0024.png in Resources */,
+				CB593F052937B60100B0E4D8 /* toaster_0061.png in Resources */,
+				CB593EFE2937B60100B0E4D8 /* toaster_0034.png in Resources */,
+				CB593F2C2937B60100B0E4D8 /* police_0008.png in Resources */,
+				CB593F412937B60200B0E4D8 /* toaster_0019.png in Resources */,
+				CB593F5C2937B60200B0E4D8 /* smoke_0017.png in Resources */,
+				CB593F322937B60200B0E4D8 /* police_0011.png in Resources */,
+				CB593EBE2937B60100B0E4D8 /* toaster_0119.png in Resources */,
+				CB593EBF2937B60100B0E4D8 /* toaster_0060.png in Resources */,
+				CB593EA92937B60100B0E4D8 /* toaster_0083.png in Resources */,
+				CB593EF22937B60100B0E4D8 /* smoke_0020.png in Resources */,
+				CB593F092937B60100B0E4D8 /* smoke_0004.png in Resources */,
+				CB593EC32937B60100B0E4D8 /* toaster_0079.png in Resources */,
+				CB593EF32937B60100B0E4D8 /* toaster_0054.png in Resources */,
+				CB593EC12937B60100B0E4D8 /* toaster_0032.png in Resources */,
+				CB593F152937B60100B0E4D8 /* toaster_0122.png in Resources */,
+				CB593F0F2937B60100B0E4D8 /* toaster_0028.png in Resources */,
+				CB593F312937B60200B0E4D8 /* smoke_0002.png in Resources */,
+				CB593F062937B60100B0E4D8 /* toaster_0092.png in Resources */,
+				CB593F3B2937B60200B0E4D8 /* toaster_0027.png in Resources */,
+				CB593EC42937B60100B0E4D8 /* smoke_0025.png in Resources */,
+				CB593F182937B60100B0E4D8 /* toaster_0105.png in Resources */,
+				CB593EFF2937B60100B0E4D8 /* toaster_0126.png in Resources */,
+				CB593F072937B60100B0E4D8 /* toaster_0095.png in Resources */,
+				CB593EDE2937B60100B0E4D8 /* police_0026.png in Resources */,
+				CB593EA52937B60100B0E4D8 /* toaster_0039.png in Resources */,
+				CB593EC22937B60100B0E4D8 /* police_0029.png in Resources */,
+				CB593F332937B60200B0E4D8 /* toaster_0002.png in Resources */,
+				CB593F562937B60200B0E4D8 /* toaster_0099.png in Resources */,
+				CB593F5A2937B60200B0E4D8 /* smoke_0019.png in Resources */,
+				CB593ED52937B60100B0E4D8 /* toaster_0072.png in Resources */,
+				CB593EEB2937B60100B0E4D8 /* toaster_0069.png in Resources */,
+				CB593EE52937B60100B0E4D8 /* police_0007.png in Resources */,
+				CB593F532937B60200B0E4D8 /* police_0013.png in Resources */,
+				CB593EEE2937B60100B0E4D8 /* police_0005.png in Resources */,
+				CB593EB42937B60100B0E4D8 /* toaster_0073.png in Resources */,
+				CB593F192937B60100B0E4D8 /* smoke_0022.png in Resources */,
+				CB593F162937B60100B0E4D8 /* toaster_0085.png in Resources */,
+				CB593F102937B60100B0E4D8 /* toaster_0046.png in Resources */,
+				CB593EA32937B60100B0E4D8 /* toaster_0100.png in Resources */,
+				CB593EC72937B60100B0E4D8 /* toaster_0001.png in Resources */,
+				CB593EF82937B60100B0E4D8 /* toaster_0107.png in Resources */,
+				CB593EE72937B60100B0E4D8 /* police_0019.png in Resources */,
+				CB593F662937B60200B0E4D8 /* police_0000.png in Resources */,
+				CB593F1D2937B60100B0E4D8 /* smoke_0009.png in Resources */,
+				CB593EA62937B60100B0E4D8 /* police_0027.png in Resources */,
+				CB593F1B2937B60100B0E4D8 /* smoke_0006.png in Resources */,
+				CB593F0D2937B60100B0E4D8 /* smoke_0029.png in Resources */,
+				CB593F3F2937B60200B0E4D8 /* toaster_0055.png in Resources */,
+				CB593F4C2937B60200B0E4D8 /* smoke_0018.png in Resources */,
+				CB593EF42937B60100B0E4D8 /* toaster_0093.png in Resources */,
+				CB593EE82937B60100B0E4D8 /* toaster_0016.png in Resources */,
+				CB593F5D2937B60200B0E4D8 /* toaster_0086.png in Resources */,
+				CB593F0A2937B60100B0E4D8 /* toaster_0121.png in Resources */,
+				CB593EBA2937B60100B0E4D8 /* smoke_0012.png in Resources */,
+				CB593EB22937B60100B0E4D8 /* toaster_0018.png in Resources */,
+				CB593EF62937B60100B0E4D8 /* police_0002.png in Resources */,
+				CB593F0B2937B60100B0E4D8 /* toaster_0006.png in Resources */,
+				CB593F1A2937B60100B0E4D8 /* toaster_0078.png in Resources */,
+				CB593F042937B60100B0E4D8 /* police_0014.png in Resources */,
+				CB593F242937B60100B0E4D8 /* toaster_0036.png in Resources */,
+				CB593F272937B60100B0E4D8 /* toaster_0056.png in Resources */,
+				CB593F572937B60200B0E4D8 /* police_0028.png in Resources */,
+				CB593F4D2937B60200B0E4D8 /* toaster_0066.png in Resources */,
+				CB593F4E2937B60200B0E4D8 /* police_0004.png in Resources */,
+				CB593F502937B60200B0E4D8 /* toaster_0041.png in Resources */,
+				CB593EAE2937B60100B0E4D8 /* toaster_0123.png in Resources */,
+				CB593F552937B60200B0E4D8 /* toaster_0103.png in Resources */,
+				CB593EF12937B60100B0E4D8 /* smoke_0007.png in Resources */,
+				CB593EAC2937B60100B0E4D8 /* toaster_0129.png in Resources */,
+				CB593F252937B60100B0E4D8 /* toaster_0076.png in Resources */,
+				CB593F0E2937B60100B0E4D8 /* smoke_0016.png in Resources */,
+				CB593EA82937B60100B0E4D8 /* toaster_0011.png in Resources */,
+				CB593EDD2937B60100B0E4D8 /* toaster_0035.png in Resources */,
+				CB593EB92937B60100B0E4D8 /* toaster_0020.png in Resources */,
+				CB593EE32937B60100B0E4D8 /* toaster_0022.png in Resources */,
+				CB593F3E2937B60200B0E4D8 /* smoke_0010.png in Resources */,
+				CB593F542937B60200B0E4D8 /* toaster_0124.png in Resources */,
+				CB593F032937B60100B0E4D8 /* toaster_0068.png in Resources */,
+				CB593F222937B60100B0E4D8 /* police_0024.png in Resources */,
+				CB593EAA2937B60100B0E4D8 /* toaster_0101.png in Resources */,
+				CB593EC02937B60100B0E4D8 /* smoke_0015.png in Resources */,
+				CB593F452937B60200B0E4D8 /* toaster_0058.png in Resources */,
+				CB593EE42937B60100B0E4D8 /* toaster_0013.png in Resources */,
+				CB593F442937B60200B0E4D8 /* toaster_0110.png in Resources */,
+				CB593F292937B60100B0E4D8 /* toaster_0014.png in Resources */,
+				CB593F4B2937B60200B0E4D8 /* toaster_0114.png in Resources */,
+				CB593F0C2937B60100B0E4D8 /* toaster_0108.png in Resources */,
+				CB593EFC2937B60100B0E4D8 /* toaster_0075.png in Resources */,
+				CB593F122937B60100B0E4D8 /* toaster_0125.png in Resources */,
+				CB593F202937B60100B0E4D8 /* toaster_0043.png in Resources */,
+				CB593F602937B60200B0E4D8 /* smoke_0013.png in Resources */,
+				CB593F302937B60200B0E4D8 /* toast.png in Resources */,
+				CB593EF92937B60100B0E4D8 /* toaster_0005.png in Resources */,
+				CB593EAD2937B60100B0E4D8 /* toaster_0118.png in Resources */,
+				CB593F462937B60200B0E4D8 /* toaster_0053.png in Resources */,
+				CB593F212937B60100B0E4D8 /* police_0017.png in Resources */,
+				CB593F622937B60200B0E4D8 /* toaster_0102.png in Resources */,
+				CB593F392937B60200B0E4D8 /* smoke_0026.png in Resources */,
+				43C222AFF0BA44DAB45EC3B9 /* thumbnail@2x.png in Resources */,
+				CB593ECA2937B60100B0E4D8 /* toaster_0004.png in Resources */,
+				CB593ED02937B60100B0E4D8 /* police_0012.png in Resources */,
+				CB593ED42937B60100B0E4D8 /* toaster_0038.png in Resources */,
+				CB593F262937B60100B0E4D8 /* toaster_0010.png in Resources */,
+				CB593EDB2937B60100B0E4D8 /* toaster_0047.png in Resources */,
+				CB593F672937B60200B0E4D8 /* toaster_0111.png in Resources */,
+				CB593EBB2937B60100B0E4D8 /* TIE-fighter.png in Resources */,
+				CB593F132937B60100B0E4D8 /* smoke_0021.png in Resources */,
+				CB593EF02937B60100B0E4D8 /* toaster_0050.png in Resources */,
+				CB593EB52937B60100B0E4D8 /* toaster_0064.png in Resources */,
+				CB593EEF2937B60100B0E4D8 /* toaster_0070.png in Resources */,
+				CB593F5F2937B60200B0E4D8 /* police_0009.png in Resources */,
+				CB593F372937B60200B0E4D8 /* toaster_0033.png in Resources */,
+				CB593F402937B60200B0E4D8 /* toaster_0021.png in Resources */,
+				CB593EED2937B60100B0E4D8 /* toaster_0077.png in Resources */,
+				CB593EC52937B60100B0E4D8 /* police_0015.png in Resources */,
+				CB593EDF2937B60100B0E4D8 /* toaster_0109.png in Resources */,
+				CB593F612937B60200B0E4D8 /* toaster_0096.png in Resources */,
+				CB593ED22937B60100B0E4D8 /* smoke_0031.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B59A11B2CD41F09E790649 /* FlyingToastersScreensaver.cpp in Sources */,
+				CB407240293678AD00C2EF10 /* FlyingToasters.cpp in Sources */,
+				DBF51FD60DAA41BFA01D51B0 /* RendererImplGlMac.mm in Sources */,
+				056DE05B2257455BABCDC356 /* CinderViewMac.mm in Sources */,
+				05419FD5A3E04BA58AF6CED1 /* AppImplMacScreenSaver.mm in Sources */,
+				1737F8FC44D44774BC89F66C /* AppScreenSaver.cpp in Sources */,
+				CB40723F293678AD00C2EF10 /* Sprite.cpp in Sources */,
+				BB8258CABF14482C8B954B3E /* UrlImplCocoa.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = XESDTU2665;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FlyingToastersScreensaver_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = FlyingToastersScreensaver;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYMROOT = ./build;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XESDTU2665;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FlyingToastersScreensaver_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = FlyingToastersScreensaver;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../../../../../cinder_0.9.2_mac;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../../../../../cinder_0.9.2_mac;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "FlyingToastersScreensaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FlyingToastersScreensaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
