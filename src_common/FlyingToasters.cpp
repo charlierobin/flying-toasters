@@ -140,9 +140,14 @@ void FlyingToasters::update()
     
     for ( auto const& sprite : this->toRemove )
     {
-        this->sprites.erase( std::remove( this->sprites.begin(), this->sprites.end(), sprite ), this->sprites.end() );
+        
+        // TODO
+        
+        this->sprites.erase( remove( this->sprites.begin(), this->sprites.end(), sprite ), this->sprites.end() );
         
         delete sprite;
+        
+        
         
         this->removed++;
         
